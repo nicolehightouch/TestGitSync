@@ -1,0 +1,6 @@
+name: LIQUID MODEL TEST
+source: fake-grzxr
+type: raw_sql
+rawSql: SELECT * FROM public.events LIMIT 10
+isSchema: false
+primaryKey: event_id
