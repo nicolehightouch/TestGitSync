@@ -1,0 +1,13 @@
+model: limit-10-users-uv6br
+destination: nd-slack-destination-4y0gu
+config:
+  format: message
+  channel: C0366K4EE9Y
+  username: Nicole testing
+  addedBody: User {{id}} was added
+  iconEmoji: ':fire_extinguisher:'
+  changedBody: User {{id}} changed
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
