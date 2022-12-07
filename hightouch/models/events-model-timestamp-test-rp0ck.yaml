@@ -1,7 +1,6 @@
-name: Events Model (timestamp test) ND UPDATED
+name: Events Model (timestamp test)
 source: fake-grzxr
 type: raw_sql
-rawSql: SELECT * FROM public.events LIMIT 10
-tableName: public.events
+tableName: SELECT * FROM public.events LIMIT 10
 isSchema: false
 primaryKey: event_id
