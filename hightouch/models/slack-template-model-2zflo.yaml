@@ -1,0 +1,8 @@
+name: slack template model
+source: tester-o718u
+type: custom
+customQuery:
+  name: Sheet1
+  type: sheet
+isSchema: false
+primaryKey: Last
