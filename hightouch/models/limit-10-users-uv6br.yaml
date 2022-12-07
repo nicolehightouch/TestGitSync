@@ -1,0 +1,7 @@
+name: limit 10 users
+source: success-eng---postgres
+type: raw_sql
+rawSql: select * from warby_parker_demo.users limit 15
+tableName: warby_parker_demo.users
+isSchema: false
+primaryKey: id
