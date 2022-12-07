@@ -1,0 +1,8 @@
+name: OpportunityModel
+source: tester-o718u
+type: custom
+customQuery:
+  name: Opportunity
+  type: sheet
+isSchema: false
+primaryKey: OpportunityID
