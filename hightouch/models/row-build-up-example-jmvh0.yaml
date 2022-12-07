@@ -1,0 +1,8 @@
+name: RowBuildUpExample
+source: tester-o718u
+type: custom
+customQuery:
+  name: RowBuildUpSource
+  type: sheet
+isSchema: false
+primaryKey: Unique
