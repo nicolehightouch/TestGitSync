@@ -1,0 +1,24 @@
+model: postgres-time-test-x8pmt
+destination: hightouch-g-sheet-adglw
+config:
+  mode: mirror
+  mappings:
+    - to: New Timestamp
+      type: template
+      template: >-
+        {{row['received_at'] | date: '%s' | plus: 14400 | date:
+        '%Y-%m-%dT%H:%M:%S.000Z' }}
+    - to: Array test
+      type: template
+      template: '{{ {{ row[''id''] }} | split: '','' | as_object }}'
+  sheetName: Timestamp stuff
+  configVersion: 0
+  spreadsheetId: 1-nQj0FN5kemdsIFib48MNbn0KpMhuwptwE0_ovE4lsU
+  autoSyncColumns: false
+schedule:
+  type: interval
+  schedule:
+    interval:
+      unit: minute
+      quantity: 3
+schedulePaused: true
