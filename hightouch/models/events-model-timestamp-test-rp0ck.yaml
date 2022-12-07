@@ -1,0 +1,6 @@
+name: Events Model (timestamp test)
+source: fake-grzxr
+type: table
+tableName: public.events
+isSchema: false
+primaryKey: event_id
