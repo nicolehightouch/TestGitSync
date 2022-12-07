@@ -1,0 +1,20 @@
+model: group-by-color-s0u5s
+destination: click-up-testing-ijghz
+config:
+  mode: upsert
+  listId: '170284758'
+  object: tasks
+  spaceId: '32115318'
+  mappings:
+    - to: name
+      from: color_list
+      type: standard
+  workspaceId: '14358397'
+  configVersion: 0
+  customMappings: []
+  externalIdMapping:
+    to: 6e62cf09-cf98-4754-9240-29420bcd2b12
+    from: user_id
+schedule:
+  type: manual
+schedulePaused: false
