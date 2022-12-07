@@ -1,0 +1,12 @@
+model: events-model-timestamp-test-rp0ck
+destination: hightouch-g-sheet-adglw
+config:
+  mode: mirror
+  mappings: []
+  sheetName: Sheet1
+  configVersion: 0
+  spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+  autoSyncColumns: true
+schedule:
+  type: manual
+schedulePaused: false
