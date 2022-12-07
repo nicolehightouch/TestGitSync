@@ -1,0 +1,20 @@
+model: hair-1wfol
+destination: notion-test-ej9v4
+config:
+  mode: upsert
+  object: database
+  mappings:
+    - to: Checkbox
+      from: last_purchase_date
+      type: standard
+    - to: Link
+      type: template
+      template: '{{ row[''email''] | split : "," | compact }}'
+  databaseId: 9e79a3c5-8d89-4ec4-8165-8d9ef74f97d4
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: email
+schedule:
+  type: manual
+schedulePaused: false
