@@ -1,0 +1,9 @@
+model: hair-1wfol
+destination: nd-slack-destination-4y0gu
+config:
+  format: csv
+  channel: C0366K4EE9Y
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
