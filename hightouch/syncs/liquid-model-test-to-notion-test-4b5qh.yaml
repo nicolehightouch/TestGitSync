@@ -1,0 +1,18 @@
+model: liquid-model-test-z1sbe
+destination: notion-test-ej9v4
+config:
+  mode: upsert
+  object: database
+  mappings:
+    - to: Status
+      type: static
+      value: Completed
+      valueType: STRING
+  databaseId: d8da8d71-addb-46e6-9ca6-fbf5bb3e7428
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: user_agent
+schedule:
+  type: manual
+schedulePaused: false
