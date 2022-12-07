@@ -1,0 +1,6 @@
+name: Cart Abandoned
+source: success-eng---postgres
+type: table
+tableName: warby_parker_demo.cart_abandoned
+isSchema: false
+primaryKey: id
