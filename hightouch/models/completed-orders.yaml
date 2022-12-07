@@ -1,0 +1,6 @@
+name: Completed Orders
+source: success-eng---postgres
+type: table
+tableName: warby_parker_demo.order_completed
+isSchema: false
+primaryKey: id
