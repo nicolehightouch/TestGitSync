@@ -1,0 +1,17 @@
+name: Group by Color
+source: success-eng---postgres
+type: raw_sql
+rawSql: |-
+  select 
+    user_id,
+    ARRAY_AGG(color) color_list
+  from 
+    warby_parker_demo.order_completed 
+  GROUP BY 
+    user_id
+  ORDER BY 
+    user_id
+  limit 10
+tableName: warby_parker_demo.users
+isSchema: false
+primaryKey: user_id
