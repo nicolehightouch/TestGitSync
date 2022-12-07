@@ -1,0 +1,13 @@
+model: 7-k-g-sheet-test-qdyb2
+destination: hightouch-g-sheet-adglw
+config:
+  mode: mirror
+  mappings: []
+  sheetName: NewTest
+  asUserEntered: true
+  configVersion: 0
+  spreadsheetId: 1dE4OBOkaOrCx6vTIg78b8ANNJj7AYrDx0ggySRhYZBM
+  autoSyncColumns: true
+schedule:
+  type: manual
+schedulePaused: false
