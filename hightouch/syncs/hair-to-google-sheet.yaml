@@ -1,0 +1,12 @@
+model: hair-1wfol
+destination: google-sheet
+config:
+  mode: mirror
+  mappings: []
+  sheetName: Sheet1
+  configVersion: 0
+  spreadsheetId: 15src3s6bWEOw-vRp0PKhGyVWVT_y_G7-SbsyhHWZjMM
+  autoSyncColumns: true
+schedule:
+  type: manual
+schedulePaused: false
