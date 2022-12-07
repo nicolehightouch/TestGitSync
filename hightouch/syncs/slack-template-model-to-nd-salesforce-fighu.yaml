@@ -1,0 +1,17 @@
+model: slack-template-model-2zflo
+destination: nd-salesforce-ghyno
+config:
+  mode: update
+  type: object
+  object: User
+  mappings:
+    - to: Nicole_Long__c
+      from: Long text
+      type: standard
+  configVersion: 0
+  externalIdMapping:
+    to: Username
+    from: EMAIL
+schedule:
+  type: manual
+schedulePaused: false
