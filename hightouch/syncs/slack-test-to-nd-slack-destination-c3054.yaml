@@ -1,0 +1,14 @@
+model: slack-test-fhepw
+destination: nd-slack-destination-4y0gu
+config:
+  format: message
+  channel:
+    column: EMAIL
+  username: Multiple User Test
+  addedBody: Hey
+  iconEmoji: ':turtle:'
+  changedBody: Hi
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
