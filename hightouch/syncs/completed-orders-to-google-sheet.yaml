@@ -1,0 +1,12 @@
+model: completed-orders
+destination: google-sheet
+config:
+  url: >-
+    https://docs.google.com/spreadsheets/d/1fBzdnbIMTAuAdScBDWn9IpWAuUm3JLfxN8AJriC_0k0/edit?usp=drivesdk
+  name: Hightouch completed orders
+  sheetName: Sheet1
+  spreadsheetId: 1fBzdnbIMTAuAdScBDWn9IpWAuUm3JLfxN8AJriC_0k0
+  autoSyncColumns: true
+schedule:
+  type: manual
+schedulePaused: false
