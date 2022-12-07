@@ -1,0 +1,31 @@
+model: contact-sfdc-model-of0p0
+destination: nd-salesforce-ghyno
+config:
+  mode: upsert
+  type: object
+  object: Contact
+  mappings:
+    - to: FirstName
+      from: FirstName
+      type: standard
+    - to: LastName
+      from: LastName
+      type: standard
+    - to: AccountId
+      type: reference
+      lookup:
+        by: Id
+        from: Account
+        byType: STRING
+        object: Account
+    - to: HomePhone
+      from: Phone
+      type: standard
+      ignoreNull: true
+  configVersion: 0
+  externalIdMapping:
+    to: Email
+    from: email
+schedule:
+  type: manual
+schedulePaused: true
