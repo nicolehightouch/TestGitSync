@@ -1,0 +1,13 @@
+model: zapier-model
+destination: nd-zapier-testing
+config:
+  mappings: []
+  subscribeAdd: true
+  configVersion: 0
+  autoSyncColumns: true
+  subscribeChange: true
+  subscribeRemove: true
+  acknowledgedRequiredTesting: true
+schedule:
+  type: manual
+schedulePaused: false
