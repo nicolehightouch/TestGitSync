@@ -1,6 +1,6 @@
 name: Events Model (timestamp test)
 source: fake-grzxr
-type: table
-tableName: public.events
+type: raw_sql
+tableName: SELECT * FROM public.events LIMIT 10
 isSchema: false
 primaryKey: event_id
