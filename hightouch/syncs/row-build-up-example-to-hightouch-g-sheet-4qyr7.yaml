@@ -1,0 +1,24 @@
+model: row-build-up-example-jmvh0
+destination: hightouch-g-sheet-adglw
+config:
+  mode: mirror
+  mappings:
+    - to: Domain
+      from: Domain
+      type: standard
+    - to: Owner
+      from: Owner
+      type: standard
+    - to: Users
+      type: template
+      template: >-
+        {{ row['Users'] | cast: "string" | regex_replace: "(\\d)(?=(\\d{3})+$)",
+        "$1,", "g" }}
+  cellRange: A15:D25
+  sheetName: RowBuildUpDestination
+  configVersion: 0
+  spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+  autoSyncColumns: false
+schedule:
+  type: manual
+schedulePaused: false
