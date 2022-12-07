@@ -1,0 +1,21 @@
+model: hair-1wfol
+destination: notion-test-ej9v4
+config:
+  mode: upsert
+  object: database
+  mappings:
+    - to: Number Test
+      from: lifetime_value
+      type: standard
+    - to: Date Test
+      type: template
+      template: >-
+        {% if row['last_purchase_date'] == null %}0001-01-01{% else
+        %}{{row['last_purchase_date']}}{% endif %}
+  databaseId: cc41e009-5710-4bfc-8ea6-605a0dbd8f90
+  externalIdMapping:
+    to: ID
+    from: id
+schedule:
+  type: manual
+schedulePaused: true
