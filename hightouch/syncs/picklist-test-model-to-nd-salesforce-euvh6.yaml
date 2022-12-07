@@ -1,0 +1,18 @@
+model: picklist-test-model-jxhn8
+destination: nd-salesforce-ghyno
+config:
+  type: metadata
+  object: Account
+  mappings:
+    - to: label
+      from: first_name
+  valueName:
+    from: first_name
+  picklistId: 00N8c00000ePM1YEAW
+  configVersion: 0
+  externalIdMapping:
+    to: valueName
+    from: first_name
+schedule:
+  type: manual
+schedulePaused: false
