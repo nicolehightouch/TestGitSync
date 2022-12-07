@@ -1,0 +1,8 @@
+name: 7K GSheet test
+source: my-test-bok6j
+type: custom
+customQuery:
+  name: Sheet2
+  type: sheet
+isSchema: false
+primaryKey: id
