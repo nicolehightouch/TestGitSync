@@ -1,0 +1,27 @@
+model: opportunity-model-ezqlq
+destination: nd-salesforce-ghyno
+config:
+  mode: upsert
+  type: object
+  object: Opportunity
+  mappings:
+    - to: CloseDate
+      from: CloseDate
+      type: standard
+    - to: StageName
+      from: StageName
+      type: standard
+    - to: ContactId
+      type: reference
+      lookup:
+        by: Email
+        from: contactEmail
+        byType: EMAIL
+        object: Contact
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: Name
+schedule:
+  type: manual
+schedulePaused: false
