@@ -1,0 +1,25 @@
+model: asana-test-source-y9ee0
+destination: asana-destination-zpthj
+config:
+  mode: upsert
+  fromId: TaskID
+  object: tasks
+  mappings:
+    - to: name
+      from: Description
+      type: standard
+    - to: followers
+      from: Followers
+      type: standard
+    - to: assignee
+      from: user
+      type: standard
+    - to: projects
+      from: Project
+      type: standard
+  workspaceId: '1198954407141596'
+  configVersion: 0
+  customMappings: []
+schedule:
+  type: manual
+schedulePaused: false
