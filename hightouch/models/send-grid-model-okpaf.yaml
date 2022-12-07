@@ -1,0 +1,8 @@
+name: SendGrid Model
+source: tester-o718u
+type: custom
+customQuery:
+  name: SendgridData
+  type: sheet
+isSchema: false
+primaryKey: email
