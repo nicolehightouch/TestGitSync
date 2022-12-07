@@ -1,4 +1,4 @@
-name: Events Model (timestamp test)
+name: Events Model (timestamp test) ND UPDATED
 source: fake-grzxr
 type: raw_sql
 tableName: SELECT * FROM public.events LIMIT 10
