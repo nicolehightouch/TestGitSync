@@ -1,0 +1,13 @@
+model: slack-template-model-2zflo
+destination: nd-slack-destination-4y0gu
+config:
+  format: message
+  channel: C0366K4EE9Y
+  addedBody: |-
+    Value: {[['column.dot']} not dot in from column dot column
+    Object: {{ | json_construct : 'name', row['last'], 'email', row['email'] }}
+  iconEmoji: ':lying_face:'
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
