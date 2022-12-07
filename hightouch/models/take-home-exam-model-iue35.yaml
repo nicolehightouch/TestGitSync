@@ -1,0 +1,8 @@
+name: Take_Home_Exam_Model
+source: tester-o718u
+type: custom
+customQuery:
+  name: TakeHomeExamSource
+  type: sheet
+isSchema: false
+primaryKey: ID
