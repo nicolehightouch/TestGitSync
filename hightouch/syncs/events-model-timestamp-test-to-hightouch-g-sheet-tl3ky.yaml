@@ -1,0 +1,17 @@
+model: events-model-timestamp-test-rp0ck
+destination: hightouch-g-sheet-adglw
+config:
+  mode: mirror
+  mappings:
+    - to: New try
+      type: template
+      template: >-
+        {{ '{"id": "' | concat: row['brand'] | concat : '", "is_primary":true}'
+        | split: "," }}
+  sheetName: Timestamp stuff
+  configVersion: 0
+  spreadsheetId: 1-nQj0FN5kemdsIFib48MNbn0KpMhuwptwE0_ovE4lsU
+  autoSyncColumns: false
+schedule:
+  type: manual
+schedulePaused: false
