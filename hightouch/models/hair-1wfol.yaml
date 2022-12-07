@@ -1,0 +1,8 @@
+name: hair
+source: tester-o718u
+type: custom
+customQuery:
+  name: Sheet2
+  type: sheet
+isSchema: false
+primaryKey: id
