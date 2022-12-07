@@ -1,0 +1,11 @@
+model: hair-1wfol
+destination: nd-slack-destination-4y0gu
+config:
+  format: message
+  channel: C0366K4EE9Y
+  addedBody: '{{ ''['' | concat: row[''id''] | concat : '']'' | parse }}'
+  isBlockKit: true
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
