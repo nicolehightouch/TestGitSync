@@ -4,7 +4,7 @@ config:
   mode: upsert
   object: database
   mappings:
-    - to: Status
+    - to: Status.test
       type: static
       value: Completed
       valueType: STRING
