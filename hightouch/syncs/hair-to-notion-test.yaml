@@ -12,7 +12,7 @@ config:
       template: '{{ row[''email''] | split : "," | compact }}'
     - to: Tags
       type: template
-      template: '{{ row[''ip_address''] | remove: "[" | remove: "]"}}'
+      template: '{{ row[''Tags''] | remove: "[" | remove: "]"}}'
   databaseId: 9e79a3c5-8d89-4ec4-8165-8d9ef74f97d4
   configVersion: 0
   externalIdMapping:
