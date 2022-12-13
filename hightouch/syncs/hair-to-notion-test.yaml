@@ -8,9 +8,8 @@ config:
       from: last_purchase_date
       type: standard
     - to: Link
-      type: static
-      value: '""'
-      valueType: STRING
+      from: context_integrations_lifetime_value
+      type: standard
     - to: Tags
       type: template
       template: '{{ row[''Tags''] | remove: "[" | remove: "]"}}'
