@@ -8,8 +8,9 @@ config:
       from: last_purchase_date
       type: standard
     - to: Link
-      type: template
-      template: '{{ row[''email''] | split : "," | compact }}'
+      type: static
+      value: 'Select Value '
+      valueType: STRING
     - to: Tags
       type: template
       template: '{{ row[''Tags''] | remove: "[" | remove: "]"}}'
