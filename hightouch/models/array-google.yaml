@@ -1,0 +1,8 @@
+name: array google
+source: tester-o718u
+type: custom
+customQuery:
+  name: Sheet14
+  type: sheet
+isSchema: false
+primaryKey: array_column
