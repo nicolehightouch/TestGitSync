@@ -5,8 +5,8 @@ config:
   object: database
   mappings:
     - to: Select
-      from: context_integrations_lifetime_value
-      type: standard
+      type: template
+      template: '{{ row[''lifetime_value''] | cast : ''boolean'' }}'
   databaseId: d8da8d71-addb-46e6-9ca6-fbf5bb3e7428
   externalIdMapping:
     to: Name
