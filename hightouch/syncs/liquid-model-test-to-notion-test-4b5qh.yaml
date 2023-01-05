@@ -6,7 +6,7 @@ config:
   mappings:
     - to: Status,test
       type: static
-      value: Booked
+      value: '{}'
       valueType: STRING
   databaseId: d8da8d71-addb-46e6-9ca6-fbf5bb3e7428
   configVersion: 0
