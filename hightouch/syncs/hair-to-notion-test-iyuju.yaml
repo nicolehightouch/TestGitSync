@@ -4,18 +4,13 @@ config:
   mode: upsert
   object: database
   mappings:
-    - to: Number Test
-      from: lifetime_value
+    - to: Select
+      from: context_integrations_lifetime_value
       type: standard
-    - to: Date Test
-      type: template
-      template: >-
-        {% if row['last_purchase_date'] == null %}0001-01-01{% else
-        %}{{row['last_purchase_date']}}{% endif %}
-  databaseId: cc41e009-5710-4bfc-8ea6-605a0dbd8f90
+  databaseId: d8da8d71-addb-46e6-9ca6-fbf5bb3e7428
   externalIdMapping:
-    to: ID
-    from: id
+    to: Name
+    from: full_name
 schedule:
   type: manual
 schedulePaused: true
