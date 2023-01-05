@@ -1,0 +1,16 @@
+model: hair-1wfol
+destination: fake-smfc-y02o9
+config:
+  mode: upsert
+  type: dataExtensions
+  object: customer-segment-c-test
+  mappings:
+    - to: email
+      from: email
+      type: standard
+  externalIdMapping:
+    to: id
+    from: id
+schedule:
+  type: manual
+schedulePaused: false
