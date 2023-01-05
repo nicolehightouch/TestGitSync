@@ -6,7 +6,7 @@ config:
   mappings:
     - to: Select
       type: template
-      template: '{{ row[''lifetime_value''] | cast : ''boolean'' }}'
+      template: '{% if row[''testing_boolean''] == "no" %}false{% else %}true{% endif %}'
   databaseId: d8da8d71-addb-46e6-9ca6-fbf5bb3e7428
   externalIdMapping:
     to: Name
