@@ -6,8 +6,8 @@ config:
     - to: Array_column
       type: static
       valueType: 'Null'
+  cellRange: A1:A4
   sheetName: Sheet1
-  asUserEntered: true
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
   sheetSelection: select
