@@ -6,32 +6,12 @@ config:
         {
             "type": "section",
             "text": {
-                "type": "mrkdwn",
-                "text": "Message Body."
-            }
-        }
-    ]
-  footer: |-
-    [
-        {
-            "type": "section",
-            "text": {
-                "type": "mrkdwn",
-                "text": "Footer"
+                "type": "plain_text",
+                "text": "Example Sync 1 ran successfully!"
             }
         }
     ]
   format: batchMessage
-  header: |-
-    [
-        {
-            "type": "section",
-            "text": {
-                "type": "mrkdwn",
-                "text": "Testing for Kong"
-            }
-        }
-    ]
   channel: C0366K4EE9Y
   username: Mobile Testing Display Name
   isBlockKit: true
