@@ -21,7 +21,6 @@ config:
     - to: HomePhone
       from: Phone
       type: standard
-      ignoreNull: true
   configVersion: 0
   externalIdMapping:
     to: Email
