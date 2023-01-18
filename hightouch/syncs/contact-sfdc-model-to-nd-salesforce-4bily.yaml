@@ -19,8 +19,8 @@ config:
         byType: STRING
         object: Account
     - to: HomePhone
-      from: Phone
-      type: standard
+      type: template
+      template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
   configVersion: 0
   externalIdMapping:
     to: Email
