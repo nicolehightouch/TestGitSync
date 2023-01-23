@@ -1,0 +1,8 @@
+name: AsanaTasksTestingJan2023
+source: tester-o718u
+type: custom
+customQuery:
+  name: NewAsana
+  type: sheet
+isSchema: false
+primaryKey: ID
