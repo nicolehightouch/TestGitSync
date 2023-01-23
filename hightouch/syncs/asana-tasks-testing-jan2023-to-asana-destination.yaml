@@ -1,0 +1,48 @@
+model: asana-tasks-testing-jan2023
+destination: asana-destination-zpthj
+config:
+  mode: upsert
+  object: tasks
+  mappings:
+    - to: assignee
+      from: AssigneeID
+      type: standard
+    - to: completed
+      from: Completed
+      type: standard
+    - to: due_on
+      from: Due_On
+      type: standard
+    - to: notes
+      from: Notes
+      type: standard
+    - to: projects
+      from: ProjectID
+      type: standard
+    - to: followers
+      from: CollaboratorsId
+      type: standard
+    - to: liked
+      from: Hearted
+      type: standard
+    - to: name
+      from: Task
+      type: standard
+  workspaceId: '1198954407141596'
+  configVersion: 1
+  customMappings:
+    - to: '1203812002116035'
+      from: PriorityID
+      type: standard
+    - to: '1203812002116045'
+      from: StatusID
+      type: standard
+    - to: '1203812126904662'
+      from: ApprovalID
+      type: standard
+  externalIdMapping:
+    to: external_id
+    from: ID
+schedule:
+  type: manual
+schedulePaused: false
