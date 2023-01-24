@@ -1,0 +1,30 @@
+model: new-cloned-sync
+destination: nd-salesforce-ghyno
+config:
+  mode: upsert
+  type: object
+  object: Contact
+  mappings:
+    - to: FirstName
+      from: FirstName
+      type: standard
+    - to: LastName
+      from: LastName
+      type: standard
+    - to: AccountId
+      type: reference
+      lookup:
+        by: Id
+        from: Account
+        byType: STRING
+        object: Account
+    - to: HomePhone
+      type: template
+      template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
+  configVersion: 0
+  externalIdMapping:
+    to: Email
+    from: email
+schedule:
+  type: manual
+schedulePaused: true
