@@ -1,0 +1,8 @@
+name: New cloned sync
+source: tester-o718u
+type: custom
+customQuery:
+  name: Contact
+  type: sheet
+isSchema: false
+primaryKey: email
