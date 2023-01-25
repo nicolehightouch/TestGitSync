@@ -3,7 +3,7 @@ destination: nd-slack-destination-4y0gu
 config:
   format: table
   channel: C0366K4EE9Y
-  username: Table contains a report of all shops
+  username: HT - Table contains a report of all shops
   configVersion: 0
 schedule:
   type: manual
