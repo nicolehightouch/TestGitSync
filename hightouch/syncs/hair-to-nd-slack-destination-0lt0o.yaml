@@ -5,9 +5,9 @@ config:
   channel: C0366K4EE9Y
   username: Testing Conditional
   addedBody: |-
-    {% if row['country'] == "United States" %}
+    {% if {{country}} == "United States" %}
       {{ last_purchase_date }}: {{ full_name}}  has enabled a net term of <{{ casted_ltv }} | {{ id }}> days by {{ full_name }} Company associated with Project records is <{{ email }} | {{ first_name }}>.
-    {% elsif row['country'] == "Canada" %}
+    {% elsif {{country}} == "Canada" %}
         {{ last_purchase_date }}: {{ full_name}}  has enabled a net term of <{{ casted_ltv }} | {{ id }}> days by {{ full_name }} Canada
     {% else %}
       No shoes selected.
