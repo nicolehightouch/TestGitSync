@@ -1,20 +1,9 @@
 model: postgres-time-test-x8pmt
 destination: nd-slack-destination-4y0gu
 config:
-  body: |-
-    [
-        {
-            "type": "section",
-            "text": {
-                "type": "plain_text",
-                "text": "Example Sync 1 ran successfully!"
-            }
-        }
-    ]
-  format: batchMessage
+  format: table
   channel: C0366K4EE9Y
-  username: Mobile Testing Display Name
-  isBlockKit: true
+  username: Table contains a report of all shops
   configVersion: 0
 schedule:
   type: manual
