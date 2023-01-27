@@ -4,8 +4,8 @@ config:
   mode: mirror
   mappings:
     - to: Array_column
-      type: static
-      valueType: 'Null'
+      type: template
+      template: '{{ row[''email_2''] }}'
   cellRange: A1:A4
   sheetName: Sheet1
   asUserEntered: true
