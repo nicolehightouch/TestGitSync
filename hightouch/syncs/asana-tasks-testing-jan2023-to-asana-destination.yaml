@@ -31,9 +31,6 @@ config:
     - to: parent
       from: Parent
       type: standard
-    - to: resource_subtype
-      from: ResourceSubtype
-      type: standard
   workspaceId: '1198954407141596'
   configVersion: 1
   customMappings:
