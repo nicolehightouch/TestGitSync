@@ -28,6 +28,9 @@ config:
     - to: name
       from: Task
       type: standard
+    - to: parent
+      from: Parent
+      type: standard
   workspaceId: '1198954407141596'
   configVersion: 1
   customMappings:
