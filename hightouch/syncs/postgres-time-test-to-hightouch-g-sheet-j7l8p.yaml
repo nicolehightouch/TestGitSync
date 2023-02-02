@@ -10,10 +10,16 @@ config:
         '%Y-%m-%dT%H:%M:%S.000Z' }}
     - to: Array test
       type: template
-      template: '{{ {{ row[''id''] }} | split: '','' | as_object }}'
+      template: |-
+        {%- if row['split_name'] != nil -%}
+        {{row['split_name']}}
+        {% else %}
+         {{ row['received_at'] }}
+        {% endif %} }}
   sheetName: Timestamp stuff
-  configVersion: 0
+  configVersion: 1
   spreadsheetId: 1-nQj0FN5kemdsIFib48MNbn0KpMhuwptwE0_ovE4lsU
+  sheetSelection: select
   autoSyncColumns: false
 schedule:
   type: interval
