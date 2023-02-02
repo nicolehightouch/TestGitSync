@@ -6,7 +6,7 @@ config:
     - to: TestingColumn
       type: template
       template: |-
-        {% if column['email_1] %} {{ row["email_2"] }}{% else %}
+        {% if column["email_1"] %} {{ row["email_2"] }}{% else %}
           Random doesn't exist
         {% endif %}
   sheetName: Sheet16
