@@ -8,7 +8,7 @@ config:
       template: >-
         {{row['received_at'] | date: '%s' | plus: 14400 | date:
         '%Y-%m-%dT%H:%M:%S.000Z' }}
-    - to: Array test
+    - to: Nil Test
       type: template
       template: |-
         {%- if row['split_name'] != nil -%}
