@@ -14,8 +14,8 @@ config:
         {%- if row['split_name'] != nil -%}
         {{row['split_name']}}
         {% else %}
-         {{ row['received_at'] }}
-        {% endif %} }}
+        {{null}}  
+        {% endif %}
   sheetName: Timestamp stuff
   configVersion: 1
   spreadsheetId: 1-nQj0FN5kemdsIFib48MNbn0KpMhuwptwE0_ovE4lsU
