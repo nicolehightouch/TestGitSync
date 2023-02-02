@@ -5,9 +5,9 @@ config:
   mappings:
     - to: TestingColumn
       type: template
-      template: |-
-        {% if column["email_1"] %} {{ row["email_2"] }}{% else %}
-          Random doesn't exist
+      template: |
+        {%- if row["random"] != nil -%} 
+        {{ row["email_2"] }}
         {% endif %}
   sheetName: Sheet16
   configVersion: 1
