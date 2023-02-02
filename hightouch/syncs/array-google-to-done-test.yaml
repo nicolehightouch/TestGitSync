@@ -5,7 +5,9 @@ config:
   mappings:
     - to: Array_column
       type: template
-      template: '{{ row[''email_2''] }}'
+      template: |-
+        {% if column['random'] %} {{ row["email_2"] }}
+        {% endif %}
   cellRange: A1:A4
   sheetName: Sheet1
   asUserEntered: true
