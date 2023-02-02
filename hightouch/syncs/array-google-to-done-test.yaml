@@ -9,7 +9,7 @@ config:
         {%- if row['random'] != nil -%}
         {{row['email_1']}}
         {% else %}
-        {{row['email_2']}}  
+        {{null}}  
         {% endif %}
   sheetName: Sheet16
   configVersion: 1
