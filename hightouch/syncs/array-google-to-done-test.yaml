@@ -6,7 +6,8 @@ config:
     - to: Array_column
       type: template
       template: |-
-        {% if column['random'] %} {{ row["email_2"] }}
+        {% if column['random'] %} {{ row["email_2"] }}{% else %}
+          Random doesn't exist
         {% endif %}
   cellRange: A1:A4
   sheetName: Sheet1
