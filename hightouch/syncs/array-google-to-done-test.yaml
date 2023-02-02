@@ -6,8 +6,10 @@ config:
     - to: TestingColumn
       type: template
       template: |
-        {%- if row["random"] != nil -%} 
-        {{ row["email_2"] }}
+        {%- if row['random'] != nil -%}
+        {{row['email_1']}}
+        {% else %}
+        {{row['email_2']}}  
         {% endif %}
   sheetName: Sheet16
   configVersion: 1
