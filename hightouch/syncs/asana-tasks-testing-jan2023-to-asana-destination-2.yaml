@@ -7,6 +7,14 @@ config:
     - to: parent
       from: Parent
       type: standard
+    - to: liked
+      type: template
+      template: |-
+        {%- if row['split_name'] != nil -%}
+        {{row['split_name']}}
+        {% else %}
+         {{ row['Hearted'] }}
+        {% endif %} }}
   workspaceId: '1198954407141596'
   configVersion: 1
   customMappings: []
