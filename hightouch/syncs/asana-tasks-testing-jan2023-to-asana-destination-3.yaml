@@ -1,0 +1,18 @@
+model: asana-tasks-testing-jan2023
+destination: asana-destination-zpthj
+config:
+  mode: upsert
+  object: tasks
+  mappings:
+    - to: completed
+      from: Completed
+      type: standard
+  workspaceId: '1198954407141596'
+  configVersion: 1
+  customMappings: []
+  externalIdMapping:
+    to: gid
+    from: Asana_ID
+schedule:
+  type: manual
+schedulePaused: false
