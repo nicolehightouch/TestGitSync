@@ -2,11 +2,17 @@ model: events-model-timestamp-test-rp0ck
 destination: hightouch-g-sheet-adglw
 config:
   mode: mirror
-  mappings: []
+  mappings:
+    - to: Test field
+      type: template
+      template: >-
+        {{ row['brand'] }}-{{ row['timestamp']| date: '%m/%d/%Y' }} à {{
+        row['price'] }}-{{ row['user_agent'] }} {{ row['event_name'] }}
   sheetName: Sheet1
-  configVersion: 0
+  configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
-  autoSyncColumns: true
+  sheetSelection: select
+  autoSyncColumns: false
 schedule:
   type: manual
 schedulePaused: false
