@@ -55,6 +55,7 @@ config:
       from: id
       type: standard
   sheetName: Sheet16
+  asUserEntered: true
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
   sheetSelection: select
