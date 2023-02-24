@@ -1,7 +1,7 @@
 name: Postgres limit 15 users
 source: success-eng---postgres
 type: raw_sql
-rawSql: select * from warby_parker_demo.users limit 15
+rawSql: select * from warby_parker_demo.users limit 16
 tableName: warby_parker_demo.users
 isSchema: false
 primaryKey: id
