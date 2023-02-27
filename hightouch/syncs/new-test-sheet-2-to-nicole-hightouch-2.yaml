@@ -42,18 +42,6 @@ config:
     - to: uuid_ts
       from: uuid_ts
       type: standard
-    - to: dob
-      from: dob
-      type: standard
-    - to: first_name
-      from: first_name
-      type: standard
-    - to: received_at
-      from: received_at
-      type: standard
-    - to: id
-      from: id
-      type: standard
   sheetName: Sheet16
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
