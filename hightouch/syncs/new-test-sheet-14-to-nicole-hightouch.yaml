@@ -6,9 +6,12 @@ config:
     - to: WeirdColumn
       type: template
       template: |-
-        {% if row['email_1'] == "email 1" %}
-        {{ row["'new_column'"] }}
-        {% endif %} 
+        {%- assign emails = '[]' | parse -%}
+        {%- if row['email_1'] != "" and row['email_1'] != null -%}
+        {%- assign curEmail = row['email_1'] | split: "|" -%}
+        {%- assign emails = emails | concat: curEmail -%}
+        {%- endif -%}
+        {{emails}}
   sheetName: Sheet1
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
