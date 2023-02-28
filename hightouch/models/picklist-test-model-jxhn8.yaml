@@ -3,9 +3,7 @@ source: success-eng---postgres
 type: raw_sql
 rawSql: |-
   select ID, FIRST_NAME, EMAIL from warby_parker_demo.users 
-  UNION ALL
-  select '9995', 'new', 'test@gmail.com'
   order by id desc
-  limit 1
+  limit 4
 isSchema: false
 primaryKey: id
