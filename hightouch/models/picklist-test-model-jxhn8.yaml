@@ -4,6 +4,6 @@ type: raw_sql
 rawSql: |-
   select ID, FIRST_NAME, EMAIL from warby_parker_demo.users 
   order by id desc
-  limit 4
+  limit 2
 isSchema: false
 primaryKey: id
