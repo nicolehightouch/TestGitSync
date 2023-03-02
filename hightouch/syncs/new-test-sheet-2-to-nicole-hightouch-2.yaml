@@ -52,4 +52,4 @@ schedule:
   schedule:
     expression: 00 3 * * *
   startDate: '2023-02-16T20:35:00.652Z'
-schedulePaused: false
+schedulePaused: true
