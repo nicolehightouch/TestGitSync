@@ -1,9 +1,7 @@
 name: Postgres limit 15 users
 source: success-eng---postgres
 type: raw_sql
-rawSql: >-
-  select extract(epoch from (date(received_at)- interval '3 hours')) as unix,*
-  from warby_parker_demo.users limit 1
+rawSql: select '1652457600000' as unix,* from warby_parker_demo.users limit 1
 tableName: warby_parker_demo.users
 isSchema: false
 primaryKey: id
