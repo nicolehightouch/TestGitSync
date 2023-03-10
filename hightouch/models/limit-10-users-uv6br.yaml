@@ -2,7 +2,7 @@ name: Postgres limit 15 users
 source: success-eng---postgres
 type: raw_sql
 rawSql: >-
-  select concat(extract(epoch from date('2022-05-16') at time zone 'utc'),'000')
+  select concat(extract(epoch from date(received_at) at time zone 'utc'),'000')
   as unix,* from warby_parker_demo.users limit 2
 tableName: warby_parker_demo.users
 isSchema: false
