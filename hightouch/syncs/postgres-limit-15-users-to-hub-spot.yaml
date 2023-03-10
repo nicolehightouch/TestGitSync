@@ -11,7 +11,8 @@ config:
   configVersion: 0
   externalIdMapping:
     to: nd_created
-    from: received_at
+    from: unix
+  associationMappings: []
 schedule:
   type: manual
 schedulePaused: false
