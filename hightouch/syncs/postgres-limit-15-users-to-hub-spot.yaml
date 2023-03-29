@@ -10,7 +10,7 @@ config:
       type: standard
     - to: lifecyclestage
       type: static
-      value: marketingqualifiedlead
+      value: '66189226'
       valueType: STRING
   configVersion: 0
   externalIdMapping:
