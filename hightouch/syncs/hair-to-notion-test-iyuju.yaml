@@ -7,6 +7,9 @@ config:
     - to: Places
       type: template
       template: '{{ row[''Column_A''] | append: " | " | append: row[''Column_B''] }}'
+    - to: DateTime
+      from: received_at
+      type: standard
   databaseId: d8da8d71-addb-46e6-9ca6-fbf5bb3e7428
   externalIdMapping:
     to: Name
