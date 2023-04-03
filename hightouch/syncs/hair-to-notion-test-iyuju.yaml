@@ -4,11 +4,9 @@ config:
   mode: upsert
   object: database
   mappings:
-    - to: Select
+    - to: Places
       type: template
-      template: >-
-        {% if row['testing_boolean'] == "no" %}{{false}}{% else %}{{true}}{%
-        endif %}
+      template: '{{ row[''Column_A''] | append: " | " | append: row[''Column_B''] }}'
   databaseId: d8da8d71-addb-46e6-9ca6-fbf5bb3e7428
   externalIdMapping:
     to: Name
