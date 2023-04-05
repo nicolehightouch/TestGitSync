@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  mongo-db-9ngvc:
+    name: MongoDB
+    type: mongodb
   create-google-slug-513:
     name: Create_Google_Source
     type: googlesheets
@@ -23,9 +26,6 @@ sources:
   sftp-gc0di:
     name: SFTP
     type: sftp
-  mongo-db-9ngvc:
-    name: MongoDB
-    type: mongodb
   testing-sftp-source-5kp9p:
     name: testingSFTPSource
     type: sftp
