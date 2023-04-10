@@ -5,7 +5,7 @@ config:
   mappings:
     - to: testing_date
       type: template
-      template: '{% if row[''Date''] == "-" %}{{null}}{%else%}{{row[''Date'']}}{% endif %}'
+      template: '{% if row[''Date''] == "-" %}{%else%}{{row[''Date'']}}{% endif %}'
       ignoreNull: true
   sheetName: Sheet1
   configVersion: 1
