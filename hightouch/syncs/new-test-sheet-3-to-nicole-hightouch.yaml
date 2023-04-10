@@ -6,7 +6,7 @@ config:
     - to: testing_date
       type: template
       template: >-
-        {% if row['Date'] == - %}{{ row['Email'] }}{% else %}{{row['Date']}}{%
+        {% if row['Date'] == "-" %}{{ row['Email'] }}{% else %}{{row['Date']}}{%
         endif %}Random
   sheetName: Sheet1
   configVersion: 1
