@@ -4,9 +4,10 @@ config:
   mode: mirror
   mappings:
     - to: testing_date
-      from: Date
-      type: standard
-      ignoreNull: true
+      type: template
+      template: >-
+        {% if row['Date'] == "-" %}'Something'{% else %}{{row['Date']}}{% endif
+        %}
   sheetName: Sheet1
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
