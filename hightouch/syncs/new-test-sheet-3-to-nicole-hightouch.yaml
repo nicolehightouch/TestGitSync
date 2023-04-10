@@ -6,7 +6,7 @@ config:
     - to: testing_date
       type: template
       template: >-
-        {% if row['Date'] == "-" %}'Something'{% else %}{{row['Date']}}{% endif
+        {% if row['Date'] == "-" %}"Something"{% else %}{{row['Date']}}{% endif
         %}
   sheetName: Sheet1
   configVersion: 1
