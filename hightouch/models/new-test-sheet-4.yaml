@@ -1,0 +1,8 @@
+name: New test - Sheet 4
+source: google-sheets-t-esting
+type: custom
+customQuery:
+  name: Sheet4
+  type: sheet
+isSchema: false
+primaryKey: contactEmail
