@@ -1,0 +1,14 @@
+model: new-test-sheet-4
+destination: nd-salesforce-ghyno
+config:
+  mode: archive
+  type: object
+  object: Contact
+  mappings: []
+  configVersion: 0
+  externalIdMapping:
+    to: Email
+    from: contactEmail
+schedule:
+  type: manual
+schedulePaused: false
