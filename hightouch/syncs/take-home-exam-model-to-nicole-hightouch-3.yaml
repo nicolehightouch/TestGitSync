@@ -17,4 +17,4 @@ schedule:
           monday: true
           wednesday: true
         time: '15:30'
-schedulePaused: false
+schedulePaused: true
