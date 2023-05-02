@@ -5,7 +5,7 @@ config:
   mappings:
     - to: Test_Petsmart
       type: template
-      template: "{% if {{ row['ENROLLMENT_COUNTRY_CD'] }} == 'CA' %}\r\n  TG_CA_MEMBER\r\n{% elsif {{ row['ENROLLMENT_COUNTRY_CD'] }} == 'US' %}\r\n  TG_USPR_MEMBER\r\n{% elsif {{ row['ENROLLMENT_COUNTRY_CD'] }} == 'PR' %}\r\nTG_USPR_MEMBER\r\n{% else %}\r\n  FAIL\r\n{% endif %}"
+      template: "{%- if row['ENROLLMENT_COUNTRY_CD'] == 'CA' -%}\r\n  TG_CA_MEMBER\r\n{%- elsif row['ENROLLMENT_COUNTRY_CD'] == 'US' -%}\r\n  TG_USPR_MEMBER\r\n{%- elsif row['ENROLLMENT_COUNTRY_CD'] == 'PR' -%}\r\nTG_USPR_MEMBER\r\n{%- else -%}\r\n  FAIL\r\n{%- endif -%}"
   sheetName: Sheet14
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
