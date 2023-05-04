@@ -6,8 +6,8 @@ config:
   object: contacts
   mappings:
     - to: closedate
-      from: test_date
-      type: standard
+      type: template
+      template: '{{ row[''test_date''] | to_unix }}'
   configVersion: 0
   externalIdMapping:
     to: email
