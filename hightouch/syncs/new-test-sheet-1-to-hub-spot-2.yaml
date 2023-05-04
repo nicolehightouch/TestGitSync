@@ -1,0 +1,18 @@
+model: slack-test-fhepw
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: contacts
+  mappings:
+    - to: closedate
+      from: test_date
+      type: standard
+  configVersion: 0
+  externalIdMapping:
+    to: email
+    from: ID
+  associationMappings: []
+schedule:
+  type: manual
+schedulePaused: false
