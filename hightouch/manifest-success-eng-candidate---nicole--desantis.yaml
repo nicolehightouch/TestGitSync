@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  tester-o718u:
+    name: New Test Sheet
+    type: googlesheets
   google-sheets-t-esting:
     name: Google Sheets TEsting
     type: googlesheets
@@ -20,9 +23,6 @@ sources:
   postgre-sql-elephant:
     name: PostgreSQL Elephant
     type: postgres
-  tester-o718u:
-    name: New Test Sheet
-    type: googlesheets
   sftp-gc0di:
     name: SFTP
     type: sftp
