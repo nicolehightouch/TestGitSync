@@ -5,4 +5,4 @@ customQuery:
   name: Sheet1
   type: sheet
 isSchema: false
-primaryKey: id
+primaryKey: ID
