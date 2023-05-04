@@ -1,0 +1,15 @@
+model: slack-test-fhepw
+destination: hub-spot
+config:
+  mode: update
+  type: object
+  object: companies
+  mappings: []
+  configVersion: 0
+  externalIdMapping:
+    to: id
+    from: ID
+  associationMappings: []
+schedule:
+  type: manual
+schedulePaused: false
