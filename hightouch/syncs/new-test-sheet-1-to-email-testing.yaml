@@ -1,0 +1,10 @@
+model: slack-test-fhepw
+destination: email-testing
+config:
+  mode: table
+  subject: SMTP Destination Email
+  recipient: nicole@hightouch.io
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
