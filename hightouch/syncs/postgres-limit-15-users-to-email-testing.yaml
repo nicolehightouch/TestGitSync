@@ -1,0 +1,11 @@
+model: limit-10-users-uv6br
+destination: email-testing
+config:
+  mode: message
+  ccList: askcnsakn
+  bccList: ssadsa
+  recipient: jncdjna
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
