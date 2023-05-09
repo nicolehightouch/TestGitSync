@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  success-eng---postgres:
+    name: Success Eng - Postgres
+    type: postgres
   tester-o718u:
     name: New Test Sheet
     type: googlesheets
@@ -29,9 +32,6 @@ sources:
   testing-sftp-source-5kp9p:
     name: testingSFTPSource
     type: sftp
-  success-eng---postgres:
-    name: Success Eng - Postgres
-    type: postgres
   sdcsdc-yqkoi:
     name: sdcsdc
     type: bigquery
@@ -45,6 +45,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  email-testing:
+    name: Email -Testing
+    type: email
   hub-spot:
     name: HubSpot
     type: hubspot
