@@ -45,6 +45,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  send-grid-destination-bl9az:
+    name: SendGrid Destination
+    type: sendgrid
   email-testing:
     name: Email -Testing
     type: email
@@ -90,9 +93,6 @@ destinations:
   zendesk-374w7:
     name: Zendesk
     type: zendesk
-  send-grid-destination-bl9az:
-    name: SendGrid Destination
-    type: sendgrid
   asana-destination-zpthj:
     name: Asana Destination
     type: asana
