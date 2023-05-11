@@ -21,6 +21,9 @@ config:
     - to: HomePhone
       type: template
       template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
+    - to: test_checkbox__c
+      type: static
+      valueType: BOOLEAN
   configVersion: 0
   externalIdMapping:
     to: Email
