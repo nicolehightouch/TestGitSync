@@ -23,6 +23,7 @@ config:
       template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
     - to: test_checkbox__c
       type: static
+      value: true
       valueType: BOOLEAN
   configVersion: 0
   externalIdMapping:
