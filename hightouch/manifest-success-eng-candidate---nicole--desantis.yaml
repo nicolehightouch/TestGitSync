@@ -45,6 +45,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  fgs-dkwyk:
+    name: Test SFTP
+    type: sftp
   send-grid-destination-bl9az:
     name: SendGrid Destination
     type: sendgrid
@@ -66,9 +69,6 @@ destinations:
   google-sheet:
     name: Nicole Personal - Google Sheet
     type: googlesheets
-  fgs-dkwyk:
-    name: Test SFTP
-    type: sftp
   fake-smfc-y02o9:
     name: Test SMFC
     type: sfmc
