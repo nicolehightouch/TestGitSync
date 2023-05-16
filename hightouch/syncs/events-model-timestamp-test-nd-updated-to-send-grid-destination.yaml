@@ -1,0 +1,16 @@
+model: events-model-timestamp-test-rp0ck
+destination: send-grid-destination-bl9az
+config:
+  mappings: []
+  configVersion: 0
+  customMappings:
+    - to: e3_D
+      from: google_click_id
+      type: standard
+  externalIdMapping:
+    to: email
+    from: email
+    type: standard
+schedule:
+  type: manual
+schedulePaused: false
