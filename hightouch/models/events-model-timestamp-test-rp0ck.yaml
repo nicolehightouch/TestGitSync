@@ -1,7 +1,13 @@
 name: Events Model (timestamp test) ND UPDATED
 source: fake-grzxr
 type: raw_sql
-rawSql: SELECT * FROM public.events LIMIT 10
+rawSql: |-
+  SELECT *
+  FROM public.customers c
+  JOIN public.events e ON c.customer_id = e.customer_id
+  WHERE e.event_name = 'Item Added'
+  AND e.product_name ILIKE 'Nano X2'
+  limit 2
 tableName: public.events
 isSchema: false
 primaryKey: event_id
