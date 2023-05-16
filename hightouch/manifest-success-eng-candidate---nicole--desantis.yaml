@@ -45,6 +45,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  google-sheet:
+    name: Nicole Personal - Google Sheet
+    type: googlesheets
   fgs-dkwyk:
     name: Test SFTP
     type: sftp
@@ -65,9 +68,6 @@ destinations:
     type: postgres
   done-test-j171s:
     name: Nicole Hightouch
-    type: googlesheets
-  google-sheet:
-    name: Nicole Personal - Google Sheet
     type: googlesheets
   fake-smfc-y02o9:
     name: Test SMFC
