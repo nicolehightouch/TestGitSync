@@ -1,0 +1,13 @@
+model: limit-10-users-uv6br
+destination: google-sheet
+config:
+  mode: mirror
+  mappings: []
+  sheetName: ideas
+  configVersion: 1
+  spreadsheetId: 1aApC_9G1tG1q3LfCfliUPHrK7NF2d3K9_Wu4mPT9BpY
+  sheetSelection: select
+  autoSyncColumns: true
+schedule:
+  type: manual
+schedulePaused: false
