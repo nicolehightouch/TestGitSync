@@ -6,7 +6,7 @@ config:
     - to: long_test
       type: template
       template: |-
-        {%- if row['Long_field'] | size > 50 -%}
+        {%- if row['Long_field'].size > 50 -%}
          {{row['Long_field'] | truncate: 20}}
         {%- else -%}
            {{row['Long_field']}}
