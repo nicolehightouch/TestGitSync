@@ -7,7 +7,7 @@ config:
       type: template
       template: |-
         {%- if row['Long_field'].size > 50 -%}
-         {{row['Long_field'] | truncate: 20}}
+         {{row['Long_field'] | truncate: 50}}
         {%- else -%}
            {{row['Long_field']}}
         {%- endif -%}
