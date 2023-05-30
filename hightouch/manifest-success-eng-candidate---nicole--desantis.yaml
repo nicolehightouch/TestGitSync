@@ -45,6 +45,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  mongo-db-destination:
+    name: MongoDB Destination
+    type: mongodb
   google-sheet:
     name: Nicole Personal - Google Sheet
     type: googlesheets
@@ -75,9 +78,6 @@ destinations:
   nd-zapier-testing:
     name: ND Zapier Testing
     type: zapier
-  mongo-db-destination:
-    name: MongoDB Destination
-    type: mongodb
   gainsight-pvl1k:
     name: Gainsight
     type: gainsight
