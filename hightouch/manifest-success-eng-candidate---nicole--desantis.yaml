@@ -45,6 +45,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  jira:
+    name: Jira
+    type: jira
   apps-flyer:
     name: AppsFlyer
     type: appsflyer
