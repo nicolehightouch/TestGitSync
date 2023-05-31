@@ -3,7 +3,7 @@ source: success-eng---postgres
 type: raw_sql
 rawSql: >-
   select concat(extract(epoch from date(received_at) at time zone 'utc'),'000')
-  as unix_update,* from warby_parker_demo.users limit 2
+  as unix_update,* from warby_parker_demo.users limit 3
 tableName: warby_parker_demo.users
 isSchema: false
 primaryKey: id
