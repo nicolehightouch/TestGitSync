@@ -45,6 +45,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  apps-flyer:
+    name: AppsFlyer
+    type: appsflyer
   mongo-db-destination:
     name: MongoDB Destination
     type: mongodb
