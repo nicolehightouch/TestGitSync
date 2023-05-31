@@ -1,0 +1,12 @@
+model: limit-10-users-uv6br
+destination: send-grid-destination-bl9az
+config:
+  mappings: []
+  configVersion: 0
+  externalIdMapping:
+    to: email
+    from: id
+    type: standard
+schedule:
+  type: manual
+schedulePaused: false
