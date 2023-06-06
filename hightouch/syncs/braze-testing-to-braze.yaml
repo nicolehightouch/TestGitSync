@@ -1,0 +1,19 @@
+model: braze-testing
+destination: braze
+config:
+  mode: upsert
+  type: object
+  object: user
+  mappings: []
+  configVersion: 2
+  customMappings:
+    - to: test_obj
+      from: ArrayNestedObject
+      type: standard
+  externalIdMapping:
+    to: external_id
+    from: _id
+    type: standard
+schedule:
+  type: manual
+schedulePaused: false
