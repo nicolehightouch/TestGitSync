@@ -1,0 +1,9 @@
+name: BrazeTesting
+source: mongo-db-9ngvc
+type: custom
+customQuery:
+  type: mongodb
+  database: Nicoles_sync
+  collection: Nicoles_sync_collection
+isSchema: false
+primaryKey: _id
