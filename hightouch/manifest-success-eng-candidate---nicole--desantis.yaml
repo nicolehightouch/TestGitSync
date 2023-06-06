@@ -48,6 +48,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  braze:
+    name: Braze
+    type: braze
   jira:
     name: Jira
     type: jira
