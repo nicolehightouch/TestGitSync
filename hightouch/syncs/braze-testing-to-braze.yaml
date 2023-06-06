@@ -10,6 +10,9 @@ config:
     - to: test_obj
       from: ArrayNestedObject
       type: standard
+    - to: object
+      from: singleObject
+      type: standard
   externalIdMapping:
     to: external_id
     from: _id
