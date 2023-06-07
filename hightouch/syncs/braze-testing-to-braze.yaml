@@ -16,6 +16,9 @@ config:
     - to: email_array
       from: ArrayField
       type: standard
+    - to: SingleObject
+      from: ObjectNestedObject
+      type: standard
   externalIdMapping:
     to: external_id
     from: _id
