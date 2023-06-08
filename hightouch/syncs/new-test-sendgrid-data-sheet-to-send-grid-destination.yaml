@@ -1,0 +1,16 @@
+model: send-grid-model-okpaf
+destination: send-grid-destination-bl9az
+config:
+  mappings: []
+  configVersion: 0
+  customMappings:
+    - to: e4_T
+      from: TextCustom
+      type: standard
+  externalIdMapping:
+    to: email
+    from: email
+    type: standard
+schedule:
+  type: manual
+schedulePaused: false
