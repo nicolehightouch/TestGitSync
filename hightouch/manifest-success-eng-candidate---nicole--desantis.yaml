@@ -48,6 +48,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  mailchimp:
+    name: Mailchimp
+    type: mailchimp
   braze:
     name: Braze
     type: braze
