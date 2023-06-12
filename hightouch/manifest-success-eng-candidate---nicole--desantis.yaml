@@ -2,15 +2,15 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  tester-o718u:
+    name: New Test Sheet
+    type: googlesheets
   airtable:
     name: Airtable
     type: airtable
   success-eng---postgres:
     name: Success Eng - Postgres
     type: postgres
-  tester-o718u:
-    name: New Test Sheet
-    type: googlesheets
   google-sheets-t-esting:
     name: Google Sheets TEsting
     type: googlesheets
