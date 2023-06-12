@@ -48,6 +48,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  done-test-j171s:
+    name: Nicole Hightouch
+    type: googlesheets
   'null':
     type: googlesheets
   mailchimp:
@@ -86,9 +89,6 @@ destinations:
   supabase:
     name: Supabase
     type: postgres
-  done-test-j171s:
-    name: Nicole Hightouch
-    type: googlesheets
   fake-smfc-y02o9:
     name: Test SMFC
     type: sfmc
