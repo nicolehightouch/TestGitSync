@@ -48,6 +48,8 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  'null':
+    type: googlesheets
   mailchimp:
     name: Mailchimp
     type: mailchimp
@@ -126,8 +128,6 @@ destinations:
   nd-salesforce-ghyno:
     name: ND Salesforce
     type: salesforce
-  'null':
-    type: googlesheets
   click-up-testing-ijghz:
     name: ClickUp testing
     type: clickup
