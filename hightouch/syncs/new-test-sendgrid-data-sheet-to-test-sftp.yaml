@@ -1,0 +1,14 @@
+model: send-grid-model-okpaf
+destination: fgs-dkwyk
+config:
+  mode: insert
+  path: results.csv
+  fileType: json
+  mappings: []
+  skipEmpty: true
+  configVersion: 0
+  autoSyncColumns: true
+  timestampOffsetSeconds: 0
+schedule:
+  type: manual
+schedulePaused: false
