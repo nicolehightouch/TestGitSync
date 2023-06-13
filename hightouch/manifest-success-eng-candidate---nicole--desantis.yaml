@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  tableau:
+    name: Tableau
+    type: tableau
   tester-o718u:
     name: New Test Sheet
     type: googlesheets
