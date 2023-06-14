@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  mongo-db-9ngvc:
+    name: MongoDB
+    type: mongodb
   tableau:
     name: Tableau
     type: tableau
@@ -17,9 +20,6 @@ sources:
   google-sheets-t-esting:
     name: Google Sheets TEsting
     type: googlesheets
-  mongo-db-9ngvc:
-    name: MongoDB
-    type: mongodb
   create-google-slug-513:
     name: Create_Google_Source
     type: googlesheets
