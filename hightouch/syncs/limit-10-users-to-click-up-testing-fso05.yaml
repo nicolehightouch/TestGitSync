@@ -15,7 +15,7 @@ config:
   customMappings:
     - to: 12dee520-437a-4a4d-a7f9-4d445f5efdcd
       type: static
-      value: Changed
+      value: ChangedAgain
       valueType: STRING
   externalIdMapping:
     to: 6e62cf09-cf98-4754-9240-29420bcd2b12
