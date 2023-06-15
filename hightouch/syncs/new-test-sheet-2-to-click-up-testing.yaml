@@ -1,0 +1,21 @@
+model: hair-1wfol
+destination: click-up-testing-ijghz
+config:
+  mode: upsert
+  listId: '170294236'
+  object: tasks
+  spaceId: '32115318'
+  folderId: '128213217'
+  mappings:
+    - to: name
+      type: template
+      template: '{{ row[''email''] | validate_email }}'
+  workspaceId: '14358397'
+  configVersion: 0
+  customMappings: []
+  externalIdMapping:
+    to: 6e62cf09-cf98-4754-9240-29420bcd2b12
+    from: id
+schedule:
+  type: manual
+schedulePaused: false
