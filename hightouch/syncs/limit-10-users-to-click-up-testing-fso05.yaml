@@ -10,6 +10,9 @@ config:
     - to: name
       from: full_name
       type: standard
+    - to: due_date
+      type: template
+      template: '{{ row[''received_at''] | to_date }}'
   workspaceId: '14358397'
   configVersion: 0
   customMappings: []
