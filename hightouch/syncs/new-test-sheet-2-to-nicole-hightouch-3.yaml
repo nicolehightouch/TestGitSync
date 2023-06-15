@@ -1,0 +1,16 @@
+model: hair-1wfol
+destination: done-test-j171s
+config:
+  mode: mirror
+  mappings:
+    - to: testingValid
+      type: template
+      template: '{{ row[''email''] | validate_email }}'
+  sheetName: Sheet1
+  configVersion: 1
+  spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+  sheetSelection: select
+  autoSyncColumns: false
+schedule:
+  type: manual
+schedulePaused: false
