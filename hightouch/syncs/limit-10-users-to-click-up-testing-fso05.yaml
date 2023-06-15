@@ -1,7 +1,7 @@
 model: limit-10-users-uv6br
 destination: click-up-testing-ijghz
 config:
-  mode: upsert
+  mode: update
   listId: '170294236'
   object: tasks
   spaceId: '32115318'
@@ -10,12 +10,13 @@ config:
     - to: name
       from: full_name
       type: standard
-    - to: due_date
-      type: template
-      template: '{{ row[''received_at''] | to_date }}'
   workspaceId: '14358397'
   configVersion: 0
-  customMappings: []
+  customMappings:
+    - to: 12dee520-437a-4a4d-a7f9-4d445f5efdcd
+      type: static
+      value: Changed
+      valueType: STRING
   externalIdMapping:
     to: 6e62cf09-cf98-4754-9240-29420bcd2b12
     from: id
