@@ -51,6 +51,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  jira:
+    name: Jira
+    type: jira
   done-test-j171s:
     name: Nicole Hightouch
     type: googlesheets
@@ -62,9 +65,6 @@ destinations:
   braze:
     name: Braze
     type: braze
-  jira:
-    name: Jira
-    type: jira
   apps-flyer:
     name: AppsFlyer
     type: appsflyer
