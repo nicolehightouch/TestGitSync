@@ -6,7 +6,7 @@ config:
     - to: test_date
       type: template
       template: >-
-        {{row['received_at'] | date: '%s' | minus: 21600 | | date:
+        {{row['received_at'] | date: '%s' | minus: 21600 | date:
         '%Y-%m-%dT%H:%M:%S-06:00'}}
   cellRange: A20:J40
   sheetName: Sheet4
