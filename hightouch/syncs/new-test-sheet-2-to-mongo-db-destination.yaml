@@ -1,0 +1,17 @@
+model: hair-1wfol
+destination: mongo-db-destination
+config:
+  mode: upsert
+  object: listingsAndReviews
+  mappings:
+    - to: emailObjectNico
+      type: template
+      template: '{{ | json_construct : ''email'',  row[''email''] }}'
+  configVersion: 0
+  autoSyncColumns: false
+  externalIdMapping:
+    to: _id
+    from: id
+schedule:
+  type: manual
+schedulePaused: false
