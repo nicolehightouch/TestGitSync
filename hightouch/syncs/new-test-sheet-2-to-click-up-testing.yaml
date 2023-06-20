@@ -10,6 +10,9 @@ config:
     - to: name
       type: template
       template: '{{ row[''email''] | validate_email }}'
+    - to: tags
+      type: template
+      template: '{{ | json_construct : ''email'',  row[''email''] }}'
   workspaceId: '14358397'
   configVersion: 0
   customMappings: []
