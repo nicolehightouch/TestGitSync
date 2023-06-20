@@ -10,9 +10,11 @@ config:
     - to: name
       type: template
       template: '{{ row[''email''] | validate_email }}'
-    - to: tags
+    - to: start_date
       type: template
-      template: '{{ | json_construct : ''email'',  row[''email''] }}'
+      template: >-
+        {{row['received_at'] | date: '%s' | minus: 21600 | | date:
+        '%Y-%m-%dT%H:%M:%S-06:00'}}
   workspaceId: '14358397'
   configVersion: 0
   customMappings: []
