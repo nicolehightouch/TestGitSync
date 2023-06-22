@@ -14,7 +14,8 @@ config:
       valueType: STRING
     - to: date_of_birth
       type: template
-      template: '{{ row[''dob''] |date: ''%b %d %Y'' | cast:''string'' }}'
+      template: '{{ row[''dob''] |date: ''%m/%d/%Y'' | cast:''string'' }}'
+      skipDateParse: true
   configVersion: 0
   externalIdMapping:
     to: email
