@@ -13,8 +13,8 @@ config:
       value: '66189226'
       valueType: STRING
     - to: date_of_birth
-      type: template
-      template: '{{ row[''dob''] |date: ''%m/%d/%Y'' | cast:''string'' }}'
+      from: dob
+      type: standard
       skipDateParse: true
   configVersion: 0
   externalIdMapping:
