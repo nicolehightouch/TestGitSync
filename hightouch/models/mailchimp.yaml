@@ -5,4 +5,4 @@ customQuery:
   name: Mailchimp
   type: sheet
 isSchema: false
-primaryKey: user
+primaryKey: email
