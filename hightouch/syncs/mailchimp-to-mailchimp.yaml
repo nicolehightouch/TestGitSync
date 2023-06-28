@@ -1,0 +1,14 @@
+model: mailchimp
+destination: mailchimp-2
+config:
+  type: segment
+  audienceId: c66b715d68
+  configVersion: 2
+  parallelization: 10
+  customSegmentName: CreateNewTest
+  externalIdMapping:
+    to: emailAddress
+    from: user
+schedule:
+  type: manual
+schedulePaused: false
