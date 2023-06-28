@@ -1,0 +1,15 @@
+model: mailchimp
+destination: mailchimp-2
+config:
+  type: segment
+  segmentId: 12978712
+  audienceId: c66b715d68
+  configVersion: 2
+  parallelization: 10
+  externalIdMapping:
+    to: emailAddress
+    from: email
+  useExistingSegment: true
+schedule:
+  type: manual
+schedulePaused: false
