@@ -1,0 +1,8 @@
+name: Mailchimp
+source: tester-o718u
+type: custom
+customQuery:
+  name: Mailchimp
+  type: sheet
+isSchema: false
+primaryKey: user
