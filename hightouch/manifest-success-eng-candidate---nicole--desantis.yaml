@@ -51,6 +51,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  mailchimp-2:
+    name: Mailchimp
+    type: mailchimp
   jira:
     name: Jira
     type: jira
