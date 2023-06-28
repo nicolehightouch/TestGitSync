@@ -2,7 +2,7 @@ model: mailchimp
 destination: mailchimp-2
 config:
   type: segment
-  segmentId: 12978712
+  segmentId: 12978716
   audienceId: c66b715d68
   configVersion: 2
   parallelization: 10
