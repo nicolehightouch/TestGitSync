@@ -51,6 +51,12 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  mongo-db:
+    name: MongoDB
+    type: mongodb
+  mongo-db-host-connection:
+    name: MongoDB - Host connection
+    type: mongodb
   mailchimp-2:
     name: Mailchimp
     type: mailchimp
