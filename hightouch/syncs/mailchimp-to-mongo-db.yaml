@@ -1,0 +1,18 @@
+model: mailchimp
+destination: mongo-db
+config:
+  mode: upsert
+  object: Nicoles_sync_collection
+  mappings:
+    - to: TestString
+      type: static
+      value: Test
+      valueType: STRING
+  configVersion: 0
+  autoSyncColumns: false
+  externalIdMapping:
+    to: _id
+    from: email
+schedule:
+  type: manual
+schedulePaused: false
