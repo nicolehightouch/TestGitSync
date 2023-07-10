@@ -8,6 +8,10 @@ config:
       type: static
       value: Test
       valueType: STRING
+    - to: NewField
+      type: static
+      value: newfield
+      valueType: STRING
   configVersion: 0
   autoSyncColumns: false
   externalIdMapping:
