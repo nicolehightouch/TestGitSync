@@ -1,0 +1,16 @@
+model: mailchimp
+destination: mailchimp-2
+config:
+  mode: upsert
+  type: object
+  object: members
+  mappings: []
+  audienceId: c66b715d68
+  configVersion: 2
+  parallelization: 10
+  externalIdMapping:
+    to: emailAddress
+    from: email
+schedule:
+  type: manual
+schedulePaused: false
