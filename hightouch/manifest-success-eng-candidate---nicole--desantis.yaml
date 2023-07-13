@@ -51,6 +51,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  elasticsearch:
+    name: Elasticsearch
+    type: elasticsearch-destination
   mongo-db:
     name: MongoDB
     type: mongodb
