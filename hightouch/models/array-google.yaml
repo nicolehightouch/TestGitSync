@@ -4,5 +4,4 @@ type: custom
 customQuery:
   name: Sheet14
   type: sheet
-isSchema: false
-primaryKey: email_1
+primaryKey: email
