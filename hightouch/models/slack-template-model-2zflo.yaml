@@ -4,5 +4,4 @@ type: custom
 customQuery:
   name: Sheet1
   type: sheet
-isSchema: false
 primaryKey: channel id
