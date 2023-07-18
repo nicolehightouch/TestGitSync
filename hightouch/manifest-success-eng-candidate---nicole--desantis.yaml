@@ -54,6 +54,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  sftp-2:
+    name: SFTP - 2
+    type: sftp
   elasticsearch:
     name: Elasticsearch
     type: elasticsearch-destination
