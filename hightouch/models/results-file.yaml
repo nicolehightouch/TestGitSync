@@ -1,0 +1,7 @@
+name: results file
+source: amazon-s3
+type: custom
+customQuery:
+  path: results.csv
+  type: string
+primaryKey: email
