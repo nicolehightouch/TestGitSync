@@ -54,6 +54,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  s3-test-bucket:
+    name: S3 - test bucket
+    type: s3
   sftp-2:
     name: SFTP - 2
     type: sftp
