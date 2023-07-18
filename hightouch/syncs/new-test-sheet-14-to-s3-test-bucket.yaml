@@ -1,0 +1,21 @@
+model: array-google
+destination: s3-test-bucket
+config:
+  mode: all
+  fileType: parquet
+  mappings:
+    - to: gender
+      from: gender
+      type: standard
+      fieldType: UTF8
+      ignoreNull: true
+    - to: LTV
+      from: lifetime_value
+      type: standard
+      fieldType: FLOAT
+  objectKey: results.parquet
+  configVersion: 0
+  timestampOffsetSeconds: 0
+schedule:
+  type: manual
+schedulePaused: false
