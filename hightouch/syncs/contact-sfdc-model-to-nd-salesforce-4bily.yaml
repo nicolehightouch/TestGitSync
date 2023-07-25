@@ -25,6 +25,13 @@ config:
       type: static
       value: '0'
       valueType: NUMBER
+    - to: OwnerId
+      type: reference
+      lookup:
+        by: Id
+        from: FirstName
+        byType: STRING
+        object: User
   configVersion: 0
   externalIdMapping:
     to: Email
