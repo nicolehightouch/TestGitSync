@@ -29,9 +29,10 @@ config:
       type: reference
       lookup:
         by: Id
-        from: FirstName
+        from: fullName
         byType: STRING
         object: User
+  useBulkApiV2: true
   configVersion: 0
   externalIdMapping:
     to: Email
