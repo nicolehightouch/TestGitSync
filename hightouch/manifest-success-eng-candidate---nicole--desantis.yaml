@@ -57,6 +57,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  http-request:
+    name: HTTP Request
+    type: webhookV2
   s3-test-bucket:
     name: S3 - test bucket
     type: s3
