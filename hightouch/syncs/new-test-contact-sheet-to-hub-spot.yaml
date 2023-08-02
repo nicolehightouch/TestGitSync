@@ -1,0 +1,24 @@
+model: contact-sfdc-model-of0p0
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: contacts
+  mappings: []
+  configVersion: 0
+  externalIdMapping:
+    to: email
+    from: email
+  associationMappings:
+    - to: CONTACT_TO_COMPANY
+      type: 'reference '
+      lookup:
+        by: website
+        from: Website
+        byType: STRING
+        object: 0-2
+        objectLabel: company
+  enableSplitBatchRetry: true
+schedule:
+  type: manual
+schedulePaused: false
