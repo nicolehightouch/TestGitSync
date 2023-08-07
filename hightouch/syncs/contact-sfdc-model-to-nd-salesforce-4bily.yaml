@@ -1,5 +1,6 @@
 model: contact-sfdc-model-of0p0
 destination: nd-salesforce-ghyno
+description: sync description
 config:
   mode: upsert
   type: object
