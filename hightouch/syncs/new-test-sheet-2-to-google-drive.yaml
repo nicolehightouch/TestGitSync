@@ -1,0 +1,15 @@
+model: hair-1wfol
+destination: google-drive
+config:
+  mode: all
+  path: export-2023-08-04T11_02_02-04_00.csv
+  fileType: json
+  mappings: []
+  folderUrl: >-
+    https://drive.google.com/drive/folders/10RrtqbPzpVkbKfCYm6MqL65d8iOTFvQ9?usp=share_link
+  configVersion: 0
+  autoSyncColumns: true
+  timestampOffsetSeconds: 0
+schedule:
+  type: manual
+schedulePaused: false
