@@ -57,6 +57,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  google-drive:
+    name: Google Drive
+    type: googleDrive
   http-request:
     name: HTTP Request
     type: webhookV2
