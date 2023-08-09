@@ -1,0 +1,17 @@
+model: hair-1wfol
+destination: airtable
+config:
+  mode: upsert
+  baseId: appUQqzYN5cqJp77T
+  mappings:
+    - to: Notes
+      from: assessment
+      type: standard
+  tableName: Table 1
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: first_name
+schedule:
+  type: manual
+schedulePaused: false
