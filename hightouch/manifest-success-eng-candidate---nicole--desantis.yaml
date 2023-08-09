@@ -57,6 +57,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  airtable:
+    name: Airtable
+    type: airtable
   google-drive:
     name: Google Drive
     type: googleDrive
