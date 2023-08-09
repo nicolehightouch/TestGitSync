@@ -7,6 +7,10 @@ config:
     - to: Notes
       from: assessment
       type: standard
+    - to: Linked Record
+      type: static
+      value: Lookup1
+      valueType: STRING
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
