@@ -10,7 +10,7 @@ config:
     - to: Linked Record
       type: static
       value: '67891'
-      valueType: NUMBER
+      valueType: STRING
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
