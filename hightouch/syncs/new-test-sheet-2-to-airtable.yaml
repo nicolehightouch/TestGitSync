@@ -8,9 +8,8 @@ config:
       from: assessment
       type: standard
     - to: Linked Record
-      type: static
-      value: '67891'
-      valueType: STRING
+      from: casted_ltv
+      type: standard
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
