@@ -4,7 +4,10 @@ config:
   mode: upsert
   type: object
   object: line_items
-  mappings: []
+  mappings:
+    - to: hs_sku
+      from: sku
+      type: standard
   configVersion: 0
   externalIdMapping:
     to: name
