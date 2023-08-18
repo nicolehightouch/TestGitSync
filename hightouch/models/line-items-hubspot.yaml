@@ -1,0 +1,7 @@
+name: LineItems - Hubspot
+source: tester-o718u
+type: custom
+customQuery:
+  name: LineItems
+  type: sheet
+primaryKey: Line items
