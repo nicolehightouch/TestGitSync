@@ -14,7 +14,15 @@ config:
     to: hs_sku
     from: sku
     type: standard
-  associationMappings: []
+  associationMappings:
+    - to: PRODUCT_TO_DEAL
+      type: 'reference '
+      lookup:
+        by: dealname
+        from: Name
+        byType: STRING
+        object: 0-3
+        objectLabel: deal
 schedule:
   type: manual
 schedulePaused: false
