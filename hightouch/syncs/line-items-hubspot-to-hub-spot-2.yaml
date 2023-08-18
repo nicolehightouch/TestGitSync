@@ -1,0 +1,16 @@
+model: line-items-hubspot
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: products
+  mappings: []
+  configVersion: 0
+  externalIdMapping:
+    to: hs_sku
+    from: sku
+    type: standard
+  associationMappings: []
+schedule:
+  type: manual
+schedulePaused: false
