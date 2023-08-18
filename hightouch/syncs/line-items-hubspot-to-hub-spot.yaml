@@ -1,0 +1,16 @@
+model: line-items-hubspot
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: line_items
+  mappings: []
+  configVersion: 0
+  externalIdMapping:
+    to: name
+    from: Line items
+    type: standard
+  associationMappings: []
+schedule:
+  type: manual
+schedulePaused: false
