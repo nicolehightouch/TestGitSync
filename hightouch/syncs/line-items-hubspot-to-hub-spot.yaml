@@ -10,7 +10,15 @@ config:
     to: name
     from: Line items
     type: standard
-  associationMappings: []
+  associationMappings:
+    - to: LINE_ITEM_TO_DEAL
+      type: 'reference '
+      lookup:
+        by: dealname
+        from: Name
+        byType: STRING
+        object: 0-3
+        objectLabel: deal
 schedule:
   type: manual
 schedulePaused: false
