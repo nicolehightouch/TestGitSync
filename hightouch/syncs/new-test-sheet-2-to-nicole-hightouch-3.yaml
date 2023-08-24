@@ -8,13 +8,19 @@ config:
       template: >-
         {% capture string_with_newlines %}
 
-        Customer ID: {{ row['email'] }}
+        Booking ID: {{ row['email'] }}
 
 
-        This customer has received 5 or more bookings today, and less than 5
-        realised bookings in the past.  Please verify the customer.
+        This booking has a balance which is due to the guest.  Please check if
+        the guest is due a refund, if they are, refund the guest, if not then
+        add the relevant EP.  Please add a note to the booking when complete to
+        confirm it's been checked.
+
 
         {% endcapture %}
+
+
+        {{ string_with_newlines | newline_to_br }} 
   sheetName: Sheet1
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
