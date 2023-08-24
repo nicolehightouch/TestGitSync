@@ -3,7 +3,7 @@ destination: done-test-j171s
 config:
   mode: mirror
   mappings:
-    - to: testingValid
+    - to: newColumn
       type: template
       template: >-
         {% capture string_with_newlines %}
@@ -14,7 +14,7 @@ config:
         This customer has received 5 or more bookings today, and less than 5
         realised bookings in the past.  Please verify the customer.
 
-        {% endcapture %} }}
+        {% endcapture %}
   sheetName: Sheet1
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
