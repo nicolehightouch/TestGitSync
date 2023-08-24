@@ -4,7 +4,7 @@ config:
   mode: message
   channel: C0366K4EE9Y
   addedBody: >-
-    {% capture string_with_newlines %}
+    {% capture  %}
 
     Customer ID: hi
 
