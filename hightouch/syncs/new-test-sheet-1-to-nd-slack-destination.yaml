@@ -3,15 +3,12 @@ destination: nd-slack-destination-4y0gu
 config:
   mode: message
   channel: C0366K4EE9Y
-  addedBody: >-
-    {% capture  %}
+  addedBody: >
 
     Customer ID: hi
 
     This customer has received 5 or more bookings today, and less than 5
     realised bookings in the past.  Please verify the customer.
-
-    {% endcapture %}
   isBlockKit: false
   configVersion: 1
 schedule:
