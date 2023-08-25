@@ -21,10 +21,10 @@ config:
     - to: HomePhone
       type: template
       template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
-  rowsPerBatch: 3
+  rowsPerBatch: 5
   configVersion: 0
   mergeIdMapping: {}
-  parallelization: 1
+  parallelization: 5
   sharedIdMapping: {}
   externalIdMapping:
     to: Email
