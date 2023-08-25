@@ -21,7 +21,7 @@ config:
     - to: HomePhone
       type: template
       template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
-  rowsPerBatch: 1
+  rowsPerBatch: 3
   configVersion: 0
   mergeIdMapping: {}
   parallelization: 1
