@@ -4,4 +4,4 @@ type: custom
 customQuery:
   name: Sheet2
   type: sheet
-primaryKey: id
+primaryKey: first_name
