@@ -1,0 +1,18 @@
+model: new-test-sheet-3
+destination: nd-salesforce-ghyno
+config:
+  mode: upsert
+  type: object
+  object: Account
+  mappings:
+    - to: NumberOfEmployees
+      from: Number field
+      type: standard
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: OppName
+    type: standard
+schedule:
+  type: manual
+schedulePaused: false
