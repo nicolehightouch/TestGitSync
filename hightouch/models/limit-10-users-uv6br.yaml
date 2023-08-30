@@ -5,5 +5,4 @@ rawSql: >-
   select concat(extract(epoch from date(received_at) at time zone 'utc'),'000')
   as unix_update,* from warby_parker_demo.users limit 5
 tableName: warby_parker_demo.users
-isSchema: false
 primaryKey: id

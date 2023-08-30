@@ -4,5 +4,4 @@ type: raw_sql
 rawSql: >-
   Select ID, RECEIVED_AT, FIRST_NAME, cast(lifetime_value as smallint) from
   warby_parker_demo.users
-isSchema: false
 primaryKey: id

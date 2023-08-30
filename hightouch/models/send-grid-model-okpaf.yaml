@@ -4,5 +4,4 @@ type: custom
 customQuery:
   name: SendgridData
   type: sheet
-isSchema: false
 primaryKey: email

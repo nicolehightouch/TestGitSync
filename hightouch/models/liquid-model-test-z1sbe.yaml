@@ -2,5 +2,4 @@ name: LIQUID MODEL TEST
 source: fake-grzxr
 type: raw_sql
 rawSql: SELECT * FROM public.events LIMIT 2
-isSchema: false
 primaryKey: event_id

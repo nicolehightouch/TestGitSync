@@ -9,5 +9,4 @@ rawSql: |-
   AND e.product_name ILIKE 'Nano X2'
   limit 2
 tableName: public.events
-isSchema: false
 primaryKey: event_id
