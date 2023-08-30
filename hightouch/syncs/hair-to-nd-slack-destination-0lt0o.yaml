@@ -14,16 +14,5 @@ config:
     {% endif %}
   configVersion: 0
 schedule:
-  type: visual_cron
-  schedule:
-    expressions:
-      - days:
-          friday: true
-          monday: true
-          sunday: true
-          tuesday: true
-          saturday: true
-          thursday: true
-          wednesday: true
-        time: '16:00'
+  type: manual
 schedulePaused: false
