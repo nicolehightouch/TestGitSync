@@ -7,5 +7,4 @@ rawSql: |-
     TO_CHAR(received_at, 'YYYY-MM-DD HH24:MI:SS') as new_date
   FROM jsaunders_testing.order_completed 
   LIMIT 15
-isSchema: false
 primaryKey: id

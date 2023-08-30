@@ -4,5 +4,4 @@ type: custom
 customQuery:
   name: NewAsana
   type: sheet
-isSchema: false
 primaryKey: ID

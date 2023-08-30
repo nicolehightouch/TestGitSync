@@ -4,5 +4,4 @@ type: custom
 customQuery:
   name: NDAsana
   type: sheet
-isSchema: false
 primaryKey: PK

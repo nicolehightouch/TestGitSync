@@ -13,5 +13,4 @@ rawSql: |-
     user_id
   limit 10
 tableName: warby_parker_demo.users
-isSchema: false
 primaryKey: user_id

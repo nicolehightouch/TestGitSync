@@ -2,5 +2,4 @@ name: Postgres - Timestamp model - Limit 7
 source: success-eng---postgres
 type: raw_sql
 rawSql: select id, received_at from warby_parker_demo.order_completed limit 7
-isSchema: false
 primaryKey: id
