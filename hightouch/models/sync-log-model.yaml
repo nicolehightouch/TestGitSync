@@ -1,0 +1,6 @@
+name: sync log model
+source: postgre-sql-elephant
+type: table
+rawSql: SELECT * FROM public.NewTable
+tableName: public.pg_stat_statements
+primaryKey: dbid
