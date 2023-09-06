@@ -6,7 +6,7 @@ config:
   fileType: json
   mappings: []
   folderUrl: >-
-    https://drive.google.com/drive/folders/16o1c5sMxyrCpvJs3jnbwrzR82XoenGhU?usp=drive_link
+    https://drive.google.com/drive/folders/10RrtqbPzpVkbKfCYm6MqL65d8iOTFvQ9?usp=drive_link
   configVersion: 0
   autoSyncColumns: true
   timestampOffsetSeconds: 0
