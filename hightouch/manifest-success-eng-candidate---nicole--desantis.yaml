@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  postgre-sql-elephant:
+    name: PostgreSQL Elephant
+    type: postgres
   google-big-query:
     name: Google BigQuery
     type: bigquery
@@ -37,9 +40,6 @@ sources:
     type: sample-data
   postgre-sql-aws-rds:
     name: PostgreSQL - AWS RDS
-    type: postgres
-  postgre-sql-elephant:
-    name: PostgreSQL Elephant
     type: postgres
   sftp-gc0di:
     name: SFTP
