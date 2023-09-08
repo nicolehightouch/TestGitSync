@@ -1,0 +1,175 @@
+# READ ONLY FILE
+# Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
+
+sources:
+  postgre-sql-elephant:
+    name: PostgreSQL Elephant
+    type: postgres
+  google-big-query:
+    name: Google BigQuery
+    type: bigquery
+  amazon-s3:
+    name: Amazon S3
+    type: s3
+  elasticsearch:
+    name: Elasticsearch
+    type: elasticsearch
+  mongo-db-9ngvc:
+    name: MongoDB
+    type: mongodb
+  tableau:
+    name: Tableau
+    type: tableau
+  tester-o718u:
+    name: New Test Sheet
+    type: googlesheets
+  airtable:
+    name: Airtable
+    type: airtable
+  success-eng---postgres:
+    name: Success Eng - Postgres
+    type: postgres
+  google-sheets-t-esting:
+    name: Google Sheets TEsting
+    type: googlesheets
+  create-google-slug-513:
+    name: Create_Google_Source
+    type: googlesheets
+  b2-c-e-commerce:
+    name: B2C eCommerce
+    type: sample-data
+  postgre-sql-aws-rds:
+    name: PostgreSQL - AWS RDS
+    type: postgres
+  sftp-gc0di:
+    name: SFTP
+    type: sftp
+  testing-sftp-source-5kp9p:
+    name: testingSFTPSource
+    type: sftp
+  sdcsdc-yqkoi:
+    name: sdcsdc
+    type: bigquery
+  my-test-bok6j:
+    name: my test
+    type: googlesheets
+  sample-source-ftwl8:
+    name: Sample Source
+    type: sample-data
+  fake-grzxr:
+    name: fake
+    type: sample-data
+destinations:
+  airtable:
+    name: Airtable
+    type: airtable
+  google-drive:
+    name: Google Drive
+    type: googleDrive
+  http-request:
+    name: HTTP Request
+    type: webhookV2
+  s3-test-bucket:
+    name: S3 - test bucket
+    type: s3
+  sftp-2:
+    name: SFTP - 2
+    type: sftp
+  elasticsearch:
+    name: Elasticsearch
+    type: elasticsearch-destination
+  mongo-db:
+    name: MongoDB
+    type: mongodb
+  mongo-db-host-connection:
+    name: MongoDB - Host connection
+    type: mongodb
+  mailchimp-2:
+    name: Mailchimp
+    type: mailchimp
+  jira:
+    name: Jira
+    type: jira
+  done-test-j171s:
+    name: Nicole Hightouch
+    type: googlesheets
+  'null':
+    type: googlesheets
+  mailchimp:
+    name: Mailchimp
+    type: mailchimp
+  braze:
+    name: Braze
+    type: braze
+  apps-flyer:
+    name: AppsFlyer
+    type: appsflyer
+  mongo-db-destination:
+    name: MongoDB Destination
+    type: mongodb
+  google-sheet:
+    name: Nicole Personal - Google Sheet
+    type: googlesheets
+  fgs-dkwyk:
+    name: Test SFTP
+    type: sftp
+  send-grid-destination-bl9az:
+    name: SendGrid Destination
+    type: sendgrid
+  email-testing:
+    name: Email -Testing
+    type: email
+  hub-spot:
+    name: HubSpot
+    type: hubspot
+  poplar-destination-wdf8l:
+    name: Poplar_Destination
+    type: webhookV2
+  supabase:
+    name: Supabase
+    type: postgres
+  fake-smfc-y02o9:
+    name: Test SMFC
+    type: sfmc
+  nd-zapier-testing:
+    name: ND Zapier Testing
+    type: zapier
+  gainsight-pvl1k:
+    name: Gainsight
+    type: gainsight
+  http-request-ht-api-maz6c:
+    name: HTTP Request - HT API
+    type: webhookV2
+  chargebee-lccdv:
+    name: Chargebee
+    type: chargebee
+  webflow-ruu4m:
+    name: Webflow
+    type: webflow
+  zendesk-374w7:
+    name: Zendesk
+    type: zendesk
+  asana-destination-zpthj:
+    name: Asana Destination
+    type: asana
+  nicole-anaplan-2gqgp:
+    name: Nicole Anaplan
+    type: anaplan
+  fake-fb-sjf5x:
+    name: fake fb
+    type: facebookConversions
+  nd-slack-destination-4y0gu:
+    name: ND slack destination
+    type: slack
+  notion-test-ej9v4:
+    name: Notion test
+    type: notion
+  nd-salesforce-ghyno:
+    name: ND Salesforce
+    type: salesforce
+  click-up-testing-ijghz:
+    name: ClickUp testing
+    type: clickup
+  hightouch-g-sheet-adglw:
+    name: Hightouch GSheet
+    type: googlesheets
