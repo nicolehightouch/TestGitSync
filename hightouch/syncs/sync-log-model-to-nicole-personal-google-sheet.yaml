@@ -3,7 +3,7 @@ destination: google-sheet
 config:
   mode: mirror
   mappings: []
-  sheetName: Sheet2
+  sheetName: Sheet14
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
   sheetSelection: select
