@@ -18,5 +18,9 @@ config:
   sheetSelection: select
   autoSyncColumns: false
 schedule:
-  type: manual
+  type: interval
+  schedule:
+    interval:
+      unit: minute
+      quantity: 5
 schedulePaused: false
