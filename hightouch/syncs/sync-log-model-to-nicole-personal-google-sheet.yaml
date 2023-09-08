@@ -2,12 +2,21 @@ model: sync-log-model
 destination: google-sheet
 config:
   mode: mirror
-  mappings: []
+  mappings:
+    - to: userid
+      from: userid
+      type: standard
+    - to: dbid
+      from: dbid
+      type: standard
+    - to: local_blks_dirtied
+      from: local_blks_dirtied
+      type: standard
   sheetName: Sheet14
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
   sheetSelection: select
-  autoSyncColumns: true
+  autoSyncColumns: false
 schedule:
   type: manual
 schedulePaused: false
