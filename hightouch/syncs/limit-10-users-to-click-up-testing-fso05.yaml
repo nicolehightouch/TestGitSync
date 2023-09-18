@@ -1,7 +1,7 @@
 model: limit-10-users-uv6br
 destination: click-up-testing-ijghz
 config:
-  mode: update
+  mode: upsert
   listId: '170294236'
   object: tasks
   spaceId: '32115318'
