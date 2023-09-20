@@ -11,8 +11,8 @@ config:
       type: standard
     - to: test_checkbox__c
       type: static
-      value: null
-      valueType: 'Null'
+      value: '#N/A'
+      valueType: STRING
   configVersion: 0
   externalIdMapping:
     to: Email
