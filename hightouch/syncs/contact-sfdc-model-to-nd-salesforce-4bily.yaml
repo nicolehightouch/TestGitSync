@@ -10,8 +10,9 @@ config:
       from: FirstName
       type: standard
     - to: test_checkbox__c
-      type: template
-      template: '{{false}}'
+      type: static
+      value: null
+      valueType: 'Null'
   configVersion: 0
   externalIdMapping:
     to: Email
