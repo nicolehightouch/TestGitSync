@@ -9,30 +9,10 @@ config:
     - to: FirstName
       from: FirstName
       type: standard
-    - to: LastName
-      from: LastName
-      type: standard
-    - to: AccountId
-      type: reference
-      lookup:
-        by: Id
-        from: Account
-        byType: STRING
-        object: Account
-    - to: HomePhone
-      type: template
-      template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
     - to: test_checkbox__c
       type: static
-      value: '0'
-      valueType: NUMBER
-    - to: OwnerId
-      type: reference
-      lookup:
-        by: Id
-        from: fullName
-        byType: STRING
-        object: User
+      value: true
+      valueType: BOOLEAN
   useBulkApiV2: true
   configVersion: 0
   externalIdMapping:
