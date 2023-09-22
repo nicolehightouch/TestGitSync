@@ -5,7 +5,7 @@ config:
   mappings:
     - to: linked
       type: template
-      template: '{{ row[''Linked Record''] }}'
+      template: '{{ row[''Linked Record''] | remove: "[" | remove: "]"}}'
   sheetName: Sheet14
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
