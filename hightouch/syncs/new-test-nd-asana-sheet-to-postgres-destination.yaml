@@ -7,6 +7,9 @@ config:
     - to: email
       from: user
       type: standard
+    - to: PK column
+      from: PK
+      type: standard
   configVersion: 1
 schedule:
   type: manual
