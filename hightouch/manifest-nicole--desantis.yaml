@@ -60,6 +60,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  postgres-destination:
+    name: Postgres Destination
+    type: postgres
   airtable:
     name: Airtable
     type: airtable
