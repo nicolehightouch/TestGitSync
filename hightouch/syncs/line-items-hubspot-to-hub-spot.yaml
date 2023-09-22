@@ -1,7 +1,7 @@
 model: line-items-hubspot
 destination: hub-spot
 config:
-  mode: insert
+  mode: upsert
   type: object
   object: line_items
   mappings:
