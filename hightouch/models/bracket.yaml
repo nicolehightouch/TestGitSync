@@ -1,0 +1,8 @@
+name: bracket
+source: airtable
+type: custom
+customQuery:
+  type: table
+  baseId: appUQqzYN5cqJp77T
+  tableId: tblSAeTq8yEVpuJbB
+primaryKey: _recordId
