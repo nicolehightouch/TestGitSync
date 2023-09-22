@@ -1,0 +1,13 @@
+model: asana-test-source-y9ee0
+destination: postgres-destination
+config:
+  mode: insert
+  object: public.NicoleTableTest
+  mappings:
+    - to: email
+      from: user
+      type: standard
+  configVersion: 1
+schedule:
+  type: manual
+schedulePaused: false
