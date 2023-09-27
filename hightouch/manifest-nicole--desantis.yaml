@@ -60,6 +60,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  marketo:
+    name: Marketo
+    type: marketo
   postgres-destination:
     name: Postgres Destination
     type: postgres
