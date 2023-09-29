@@ -1,11 +1,10 @@
 model: new-test-sheet-3
 destination: email
 config:
-  body: This is the file
-  mode: csv
-  subject: Testing attachment
+  mode: message
+  subject: TEsting
+  addedBody: Testing
   recipient: nicolemdesantis13@gmail.com
-  sendEmpty: true
   configVersion: 0
 schedule:
   type: manual
