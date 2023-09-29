@@ -11,6 +11,9 @@ config:
       template: |+
         {{ row['Number (from Linked Record)'] | remove: "[" | remove: "]" }}
 
+    - to: birthday
+      from: birthday_column
+      type: standard
   sheetName: Sheet14
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
