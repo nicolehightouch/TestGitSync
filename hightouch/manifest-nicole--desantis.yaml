@@ -60,6 +60,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  email:
+    name: Email
+    type: email
   marketo:
     name: Marketo
     type: marketo
