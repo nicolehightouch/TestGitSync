@@ -6,8 +6,8 @@ config:
   object: contacts
   mappings:
     - to: message
-      from: Multi-line test
-      type: standard
+      type: template
+      template: '{{ row[''Multi-line test''] | json }}'
   configVersion: 0
   externalIdMapping:
     to: email
