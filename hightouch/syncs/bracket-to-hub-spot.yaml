@@ -7,7 +7,11 @@ config:
   mappings:
     - to: message
       type: template
-      template: '{{ row[''Multi-line test''] | json }}'
+      template: |-
+        {% assign words = Multi_line test | split: ' \\n' %}
+        {% for word in words %}
+        {{ word }}
+        {% endfor %}
   configVersion: 0
   externalIdMapping:
     to: email
