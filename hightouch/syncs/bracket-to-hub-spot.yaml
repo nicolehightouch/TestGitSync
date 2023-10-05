@@ -1,0 +1,19 @@
+model: bracket
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: contacts
+  mappings:
+    - to: message
+      from: Multi-line test
+      type: standard
+  configVersion: 0
+  externalIdMapping:
+    to: email
+    from: Email
+    type: standard
+  associationMappings: []
+schedule:
+  type: manual
+schedulePaused: false
