@@ -1,0 +1,7 @@
+name: Finance Approver model
+source: tester-o718u
+type: custom
+customQuery:
+  name: Sheet1
+  type: sheet
+primaryKey: email
