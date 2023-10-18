@@ -4,4 +4,4 @@ type: custom
 customQuery:
   name: Sheet4
   type: sheet
-primaryKey: contactEmail
+primaryKey: google_click_id
