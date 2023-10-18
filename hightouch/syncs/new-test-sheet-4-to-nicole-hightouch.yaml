@@ -18,7 +18,6 @@ config:
     - to: Google Click ID
       from: google_click_id
       type: standard
-  cellRange: A2:E9
   sheetName: Raw Data
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
