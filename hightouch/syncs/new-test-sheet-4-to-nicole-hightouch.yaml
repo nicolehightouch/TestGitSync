@@ -3,15 +3,23 @@ destination: done-test-j171s
 config:
   mode: mirror
   mappings:
-    - to: long_test
-      type: template
-      template: |-
-        {%- if row['Long_field'].size > 50 -%}
-         {{row['Long_field'] | truncate: 50}}
-        {%- else -%}
-           {{row['Long_field']}}
-        {%- endif -%}
-  sheetName: Sheet1
+    - to: Conversion Currency
+      from: conversion_currency
+      type: standard
+    - to: Conversion Value
+      from: conversion_value
+      type: standard
+    - to: Conversion Time
+      from: conversion_time_pst
+      type: standard
+    - to: Conversion Name
+      from: conversion_name
+      type: standard
+    - to: Google Click ID
+      from: google_click_id
+      type: standard
+  cellRange: A2:E40000
+  sheetName: Raw Data
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
   sheetSelection: select
