@@ -9,7 +9,7 @@ config:
       template: |-
         {%- assign genders = '[]' | parse -%}
         {%- if row['gender'] != "" and row['gender'] != null -%}
-        {%- assign curGender = row['gender'] -%}
+        {%- assign curGender = row['gender'] | split: ", " -%}
         {%- assign genders = genders | concat: curGender -%}
         {%- endif -%}
         {{genders}}
