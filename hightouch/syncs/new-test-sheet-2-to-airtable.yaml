@@ -5,8 +5,14 @@ config:
   baseId: appUQqzYN5cqJp77T
   mappings:
     - to: Notes
-      from: assessment
-      type: standard
+      type: template
+      template: |-
+        {%- assign genders = '[]' | parse -%}
+        {%- if row['gender'] != "" and row['gender'] != null -%}
+        {%- assign curGender = row['gender'] | split: "|" -%}
+        {%- assign genders = genders | concat: curGender -%}
+        {%- endif -%}
+        {{genders}}
     - to: Linked Record
       from: casted_ltv
       type: standard
