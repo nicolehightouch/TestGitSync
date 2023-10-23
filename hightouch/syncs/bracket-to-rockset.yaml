@@ -3,10 +3,7 @@ destination: rockset
 config:
   mode: upsert
   object: newCollection
-  mappings:
-    - to: Notes
-      from: Notes
-      type: standard
+  mappings: []
   workspace: nicole-test
   configVersion: 0
   externalIdMapping:
