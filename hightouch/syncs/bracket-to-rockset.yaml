@@ -10,7 +10,7 @@ config:
   workspace: nicole-test
   configVersion: 0
   externalIdMapping:
-    to: "\uFEFFName"
+    to: Name
     from: Name
 schedule:
   type: manual
