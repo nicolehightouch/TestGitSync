@@ -60,6 +60,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  rockset:
+    name: Rockset
+    type: rockset-destination
   email:
     name: Email
     type: email
