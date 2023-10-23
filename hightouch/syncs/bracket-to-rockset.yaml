@@ -1,0 +1,17 @@
+model: bracket
+destination: rockset
+config:
+  mode: upsert
+  object: newCollection
+  mappings:
+    - to: Notes
+      from: Notes
+      type: standard
+  workspace: nicole-test
+  configVersion: 0
+  externalIdMapping:
+    to: "\uFEFFName"
+    from: Name
+schedule:
+  type: manual
+schedulePaused: false
