@@ -1,0 +1,17 @@
+model: bracket
+destination: rockset
+config:
+  mode: upsert
+  object: MongoArray
+  mappings:
+    - to: ArrayField
+      from: Notes
+      type: standard
+  workspace: nicole-test
+  configVersion: 0
+  externalIdMapping:
+    to: TestString
+    from: Email
+schedule:
+  type: manual
+schedulePaused: false
