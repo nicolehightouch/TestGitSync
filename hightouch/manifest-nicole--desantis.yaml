@@ -60,6 +60,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  test-zendesk:
+    name: Test Zendesk
+    type: zendesk
   rockset:
     name: Rockset
     type: rockset-destination
