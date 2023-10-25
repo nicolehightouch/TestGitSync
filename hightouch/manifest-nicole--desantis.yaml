@@ -60,12 +60,6 @@ sources:
     name: fake
     type: sample-data
 destinations:
-  test-braze:
-    name: Test Braze
-    type: braze
-  test-zendesk:
-    name: Test Zendesk
-    type: zendesk
   rockset:
     name: Rockset
     type: rockset-destination
