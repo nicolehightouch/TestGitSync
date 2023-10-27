@@ -7,9 +7,6 @@ config:
     - to: ArrayField
       from: Notes
       type: standard
-    - to: NewField
-      from: Status
-      type: standard
   workspace: nicole-test
   configVersion: 0
   externalIdMapping:
