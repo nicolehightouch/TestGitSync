@@ -2,6 +2,6 @@ name: testModel3
 source: success-eng---postgres
 type: raw_sql
 rawSql: >-
-  SELECT id, TO_CHAR(received_at, 'YYYY-MM-DD HH24:MI:SS') as new_date FROM
-  jsaunders_testing.order_completed LIMIT 15
+  SELECT id, TO_CHAR(received_at, 'YYYY-MM-DD HH24:MI:SS') as new_date_update
+  FROM jsaunders_testing.order_completed LIMIT 15
 primaryKey: id
