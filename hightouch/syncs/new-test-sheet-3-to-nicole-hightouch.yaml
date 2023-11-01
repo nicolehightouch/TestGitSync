@@ -2,7 +2,10 @@ model: new-test-sheet-3
 destination: done-test-j171s
 config:
   mode: mirror
-  mappings: []
+  mappings:
+    - to: email
+      type: template
+      template: '{{ row[''Email''] | validate_email }}'
   sheetName: Raw Data
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
