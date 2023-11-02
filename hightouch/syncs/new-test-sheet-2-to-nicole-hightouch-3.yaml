@@ -21,7 +21,12 @@ config:
 
 
         {{ string_with_newlines | newline_to_br }} 
-  sheetName: Sheet1
+    - to: newCol2
+      type: template
+      template: >-
+        1115580969,{{ context['model_id'] }},{{ context['timestamp'] |
+        date:YYYYMMDDhhmiss | cast : 'string' }}, Activation File
+  sheetName: Raw Data
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
   sheetSelection: select
