@@ -24,8 +24,8 @@ config:
     - to: newCol2
       type: template
       template: >-
-        1115580969,{{ context['model_id'] }},{{ context['timestamp'] |
-        date:%Y/%m/%dT%H:%M:%S | cast : 'string'}}, Activation File
+        1115580969,{{ context['model_id'] }},{{ context['timestamp'] | date:
+        '%Y%m%d'}}, Activation File
   sheetName: Raw Data
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
