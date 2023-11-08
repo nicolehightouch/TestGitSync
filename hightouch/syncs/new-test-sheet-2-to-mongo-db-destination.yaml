@@ -6,7 +6,9 @@ config:
   mappings:
     - to: emailObjectNico
       type: template
-      template: '{{ | json_construct : ''email'',  row[''email''] }}'
+      template: >-
+        {{ | json_construct : 'is_email_optin',  row['is_email_optin'],
+        'email_permission_update_ts', row['email_permission_update_ts']}}
   configVersion: 0
   autoSyncColumns: false
   externalIdMapping:
