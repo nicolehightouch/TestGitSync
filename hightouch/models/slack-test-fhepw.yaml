@@ -2,6 +2,6 @@ name: New test - Sheet 1
 source: tester-o718u
 type: custom
 customQuery:
-  name: Sheet1
+  name: Raw Data
   type: sheet
-primaryKey: newColumn
+primaryKey: upgrade_deadline
