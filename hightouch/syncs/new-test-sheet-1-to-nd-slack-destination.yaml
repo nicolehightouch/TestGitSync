@@ -3,12 +3,7 @@ destination: nd-slack-destination-4y0gu
 config:
   mode: message
   channel: C0366K4EE9Y
-  addedBody: >
-
-    Customer ID: hi
-
-    This customer has received 5 or more bookings today, and less than 5
-    realised bookings in the past.  Please verify the customer.
+  addedBody: "*New Breaking Change: {{ connector_name }}*\n\nThe {{ connector_type }},\_{{ connector_name }}, has a new `<{{ migration_documentation_url }}|breaking change>` with the version {{ breaking_change_connector_version }}\_and an upgrade deadline of {{ upgrade_deadline }}. \n\n Message: _{{ breaking_change_message }}_"
   isBlockKit: false
   configVersion: 1
 schedule:
