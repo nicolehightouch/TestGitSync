@@ -66,6 +66,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  google-sheet:
+    name: Nicole Personal - Google Sheet
+    type: googlesheets
   rockset:
     name: Rockset
     type: rockset-destination
@@ -125,9 +128,6 @@ destinations:
   mongo-db-destination:
     name: MongoDB Destination
     type: mongodb
-  google-sheet:
-    name: Nicole Personal - Google Sheet
-    type: googlesheets
   fgs-dkwyk:
     name: Test SFTP
     type: sftp
