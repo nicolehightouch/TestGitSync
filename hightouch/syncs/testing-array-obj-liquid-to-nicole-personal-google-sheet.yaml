@@ -1,0 +1,15 @@
+model: testing-array-obj-liquid
+destination: google-sheet
+config:
+  mode: mirror
+  mappings:
+    - to: ArrayNestedObject
+      type: template
+      template: '{{ row[''ArrayNestedObject''] | first }}'
+  sheetName: Raw Data
+  configVersion: 1
+  spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+  sheetSelection: select
+schedule:
+  type: manual
+schedulePaused: false
