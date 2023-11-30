@@ -4,7 +4,7 @@ config:
   mode: upsert
   object: Nicoles_sync_collection
   mappings:
-    - to: ArrayNestedObject
+    - to: ArrayNestedObjectNew
       type: template
       template: '{{ row[''ArrayNestedObject''] | first}}'
   configVersion: 0
