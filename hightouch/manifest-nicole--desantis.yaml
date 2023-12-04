@@ -66,6 +66,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  amazon-kinesis:
+    name: Amazon Kinesis
+    type: amazon-kinesis
   google-sheet:
     name: Nicole Personal - Google Sheet
     type: googlesheets
