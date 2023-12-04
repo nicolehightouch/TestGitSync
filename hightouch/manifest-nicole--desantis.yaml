@@ -66,6 +66,12 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  amazon-sqs:
+    name: Amazon SQS
+    type: amazon-sqs
+  dynamo-db:
+    name: DynamoDB
+    type: dynamodb
   amazon-kinesis:
     name: Amazon Kinesis
     type: amazon-kinesis
