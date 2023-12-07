@@ -4,8 +4,8 @@ config:
   mode: mirror
   mappings:
     - to: ArrayNestedObject
-      type: template
-      template: '{{ row[''ArrayNestedObject''] | first | cast :''string''}}'
+      from: ArrayField
+      type: standard
   sheetName: Raw Data
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
