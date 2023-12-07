@@ -1,0 +1,7 @@
+name: testing
+source: tester-o718u
+type: custom
+customQuery:
+  name: Sheet14
+  type: sheet
+primaryKey: linked
