@@ -1,5 +1,6 @@
 model: hair-1wfol
 destination: nd-slack-destination-4y0gu
+description: description
 config:
   mode: message
   channel:
