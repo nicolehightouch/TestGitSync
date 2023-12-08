@@ -11,16 +11,9 @@ config:
     - to: LastName
       from: LastName
       type: standard
-    - to: AccountId
-      type: reference
-      lookup:
-        by: Id
-        from: Account
-        byType: STRING
-        object: Account
-    - to: HomePhone
-      type: template
-      template: '{% if row[''Phone''] == "" %}{{null}}{% else %}{{row[''Phone'']}}{% endif %}'
+    - to: Percent_test__c
+      from: Percent Field
+      type: standard
   rowsPerBatch: 5
   configVersion: 0
   mergeIdMapping: {}
@@ -28,7 +21,8 @@ config:
   sharedIdMapping: {}
   externalIdMapping:
     to: Email
-    from: email
+    from: Email
+    type: standard
 schedule:
   type: manual
 schedulePaused: true
