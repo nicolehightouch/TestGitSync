@@ -2,6 +2,6 @@ name: New cloned sync
 source: tester-o718u
 type: custom
 customQuery:
-  name: Contact
+  name: SFDCContactOpp
   type: sheet
-primaryKey: email
+primaryKey: ContactID
