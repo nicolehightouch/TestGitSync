@@ -12,8 +12,8 @@ config:
       from: LastName
       type: standard
     - to: Percent_test__c
-      type: template
-      template: '{{ row[''Percent Field''] | times: 100 }}'
+      from: Percent Field
+      type: standard
   rowsPerBatch: 5
   configVersion: 0
   mergeIdMapping: {}
