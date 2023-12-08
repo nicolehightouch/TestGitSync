@@ -1,0 +1,14 @@
+model: hair-1wfol
+destination: nd-slack-destination-4y0gu
+config:
+  mode: message
+  channel:
+    from: channel
+  username: Intelycare Testing
+  addedBody: "\t\t[{\n\t\t\t\"type\": \"section\",\n\t\t\t\"text\": {\n\t\t\t\t\"type\": \"mrkdwn\",\n\t\t\t\t\"text\": \"PID: {{id}} accepted a shift! This IP has no prior completed shifts.\\n\\n*Soonest Upcoming Shift:* {{received_at}}\\n*Market:* {{country}} \\n\\nhttps://staffing.intelycare.com/ops/prov/{{iid}}\"\n\t\t\t}\n\t\t}]"
+  iconEmoji: ':fire:'
+  isBlockKit: true
+  configVersion: 1
+schedule:
+  type: manual
+schedulePaused: false
