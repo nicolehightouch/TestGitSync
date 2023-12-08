@@ -5,7 +5,16 @@ config:
   channel:
     from: channel
   username: Intelycare Testing
-  addedBody: "\t\t[{\n\t\t\t\"type\": \"section\",\n\t\t\t\"text\": {\n\t\t\t\t\"type\": \"mrkdwn\",\n\t\t\t\t\"text\": \"PID: {{id}} accepted a shift! This IP has no prior completed shifts.\\n\\n*Soonest Upcoming Shift:* {{received_at}}\\n*Market:* {{country}} \\n\\nhttps://staffing.intelycare.com/ops/prov/{{iid}}\"\n\t\t\t}\n\t\t}]"
+  addedBody: |-
+    [
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "PID: {{id}} accepted a shift! This IP has no prior completed shifts.\n\n*Soonest Upcoming Shift:* {{received_at}}\n*Market:* {{country}} \n\nhttps://staffing.intelycare.com/ops/prov/{{iid}}\n cc {% if channel = 'general' %} <@{{"nicolemdesantis13@gmail.com"| slack_user_lookup}}>{% else %} <@{{"nicole@hightouch.io"| slack_user_lookup}}>{% endif %}"
+            }
+        }
+    ]
   iconEmoji: ':fire:'
   isBlockKit: true
   configVersion: 1
