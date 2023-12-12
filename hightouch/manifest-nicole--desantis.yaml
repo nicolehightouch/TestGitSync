@@ -2,69 +2,69 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
-  tester-o718u:
-    name: New Test Sheet
-    type: googlesheets
-  google-big-query-new-2:
-    name: prod-test-2
-    type: bigquery
-  google-big-query-new:
-    name: prod-test
-    type: bigquery
-  postgre-sql-elephant:
-    name: PostgreSQL Elephant
-    type: postgres
-  google-big-query:
-    name: Google BigQuery
-    type: bigquery
-  amazon-s3:
-    name: Amazon S3
-    type: s3
-  elasticsearch:
-    name: Elasticsearch
-    type: elasticsearch
-  mongo-db-9ngvc:
-    name: MongoDB
-    type: mongodb
-  tableau:
-    name: Tableau
-    type: tableau
-  airtable:
-    name: Airtable
-    type: airtable
-  success-eng---postgres:
-    name: Success Eng - Postgres
-    type: postgres
-  google-sheets-t-esting:
-    name: Google Sheets TEsting
-    type: googlesheets
-  create-google-slug-513:
-    name: Create_Google_Source
-    type: googlesheets
-  b2-c-e-commerce:
-    name: B2C eCommerce
-    type: sample-data
-  postgre-sql-aws-rds:
-    name: PostgreSQL - AWS RDS
-    type: postgres
   sftp-gc0di:
     name: SFTP
     type: sftp
-  testing-sftp-source-5kp9p:
-    name: testingSFTPSource
-    type: sftp
-  sdcsdc-yqkoi:
-    name: sdcsdc
-    type: bigquery
-  my-test-bok6j:
-    name: my test
-    type: googlesheets
-  sample-source-ftwl8:
-    name: Sample Source
-    type: sample-data
   fake-grzxr:
     name: fake
     type: sample-data
+  google-big-query:
+    name: Google BigQuery
+    type: bigquery
+  sample-source-ftwl8:
+    name: Sample Source
+    type: sample-data
+  sdcsdc-yqkoi:
+    name: sdcsdc
+    type: bigquery
+  success-eng---postgres:
+    name: Success Eng - Postgres
+    type: postgres
+  elasticsearch:
+    name: Elasticsearch
+    type: elasticsearch
+  my-test-bok6j:
+    name: my test
+    type: googlesheets
+  testing-sftp-source-5kp9p:
+    name: testingSFTPSource
+    type: sftp
+  postgre-sql-aws-rds:
+    name: PostgreSQL - AWS RDS
+    type: postgres
+  b2-c-e-commerce:
+    name: B2C eCommerce
+    type: sample-data
+  create-google-slug-513:
+    name: Create_Google_Source
+    type: googlesheets
+  tableau:
+    name: Tableau
+    type: tableau
+  google-sheets-t-esting:
+    name: Google Sheets TEsting
+    type: googlesheets
+  mongo-db-9ngvc:
+    name: MongoDB
+    type: mongodb
+  postgre-sql-elephant:
+    name: PostgreSQL Elephant
+    type: postgres
+  airtable:
+    name: Airtable
+    type: airtable
+  amazon-s3:
+    name: Amazon S3
+    type: s3
+  google-big-query-new:
+    name: prod-test
+    type: bigquery
+  google-big-query-new-2:
+    name: prod-test-2
+    type: bigquery
+  tester-o718u:
+    name: New Test Sheet
+    type: googlesheets
 destinations:
   amazon-sqs:
     name: Amazon SQS
