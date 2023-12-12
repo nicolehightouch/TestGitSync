@@ -4,4 +4,4 @@ type: custom
 customQuery:
   name: Raw Data
   type: sheet
-primaryKey: upgrade_deadline
+primaryKey: ArrayNestedObject
