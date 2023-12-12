@@ -1,0 +1,32 @@
+model: slack-test-fhepw
+destination: airtable
+config:
+  mode: upsert
+  baseId: appUQqzYN5cqJp77T
+  mappings:
+    - to: Notes
+      type: template
+      template: >-
+        {%- assign finalValues = '[]' | parse -%}
+
+        {%- if row['ArrayNestedObject'] != "" and row['ArrayNestedObject'] !=
+        null -%}
+
+        {%- assign stringValues = row['ArrayNestedObject'] | regex_replace :
+        '{', '' | regex_replace : '}', ''-%}
+
+        {%- assign curValues = stringValues | split: "," -%}
+
+        {%- assign finalValues = finalValues | concat: curValues -%}
+
+        {%- endif -%}
+
+        {{finalValues}}
+  tableName: Table 1
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: ArrayNestedObject
+schedule:
+  type: manual
+schedulePaused: false
