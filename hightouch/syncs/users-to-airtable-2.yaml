@@ -1,0 +1,17 @@
+model: users
+destination: airtable
+config:
+  mode: upsert
+  baseId: appUQqzYN5cqJp77T
+  mappings:
+    - to: Notes
+      from: id
+      type: standard
+  tableName: Table 3
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: id
+schedule:
+  type: manual
+schedulePaused: false
