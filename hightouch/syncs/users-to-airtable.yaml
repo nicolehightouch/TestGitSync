@@ -4,8 +4,8 @@ config:
   mode: upsert
   baseId: appUQqzYN5cqJp77T
   mappings:
-    - to: Actions
-      from: last_name
+    - to: ID_testing
+      from: id
       type: standard
   tableName: Table 2
   configVersion: 0
