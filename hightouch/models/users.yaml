@@ -1,5 +1,5 @@
 name: Users
 source: success-eng---postgres
 type: table
-tableName: warby_parker_demo.users
+tableName: jsaunders_testing.users
 primaryKey: id
