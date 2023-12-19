@@ -9,8 +9,13 @@ config:
       from: FirstName
       type: standard
     - to: LastName
-      from: LastName
-      type: standard
+      type: template
+      template: |-
+        {%- if row['FirstName'] == 'Nicole' -%}
+        {{null}}
+        {%- else -%}
+        {{ row['LastName'] }}
+        {%- endif -%}
     - to: Percent_test__c
       from: Percent Field
       type: standard
@@ -23,6 +28,7 @@ config:
     to: Email
     from: Email
     type: standard
+  enableSplitBatchRetry: true
 schedule:
   type: manual
 schedulePaused: true
