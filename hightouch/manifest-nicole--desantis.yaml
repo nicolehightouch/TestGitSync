@@ -54,9 +54,6 @@ sources:
     name: fake
     type: sample-data
 destinations:
-  dynamo-db:
-    name: DynamoDB
-    type: dynamodb
   amazon-kinesis:
     name: Amazon Kinesis
     type: amazon-kinesis
