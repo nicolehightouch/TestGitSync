@@ -47,9 +47,6 @@ sources:
   testing-sftp-source-5kp9p:
     name: testingSFTPSource
     type: sftp
-  sdcsdc-yqkoi:
-    name: sdcsdc
-    type: bigquery
   my-test-bok6j:
     name: my test
     type: googlesheets
