@@ -54,9 +54,6 @@ sources:
     name: fake
     type: sample-data
 destinations:
-  amazon-sqs:
-    name: Amazon SQS
-    type: amazon-sqs
   dynamo-db:
     name: DynamoDB
     type: dynamodb
