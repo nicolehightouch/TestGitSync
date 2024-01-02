@@ -32,9 +32,6 @@ sources:
   google-sheets-t-esting:
     name: Google Sheets TEsting
     type: googlesheets
-  create-google-slug-513:
-    name: Create_Google_Source
-    type: googlesheets
   b2-c-e-commerce:
     name: B2C eCommerce
     type: sample-data
