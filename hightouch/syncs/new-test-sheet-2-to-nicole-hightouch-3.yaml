@@ -26,6 +26,9 @@ config:
       template: >-
         1115580969,{{ context['model_id'] }},{{ context['timestamp'] | date:
         '%Y%m%d%H%M%S'}}, Activation File,,
+    - to: template timestamp
+      type: template
+      template: '{{ row[''uuid_ts''] | date: "%m/%d/%Y 12:00:00 AM" }}'
   sheetName: Raw Data
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
