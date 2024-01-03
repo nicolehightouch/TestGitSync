@@ -1,0 +1,11 @@
+model: sync-log-model
+destination: email
+config:
+  mode: message
+  subject: Hi!
+  addedBody: What up
+  recipient: nicole@hightouch.io
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
