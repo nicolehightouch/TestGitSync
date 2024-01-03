@@ -25,12 +25,12 @@ config:
     - to: Email
       type: template
       template: |-
-        {%- assign emailCheck = row['badEmail'] | validate_email -%}
-        {%- if emailCheck contains "Input" -%}
+        {%- if row['badEmail'] contains "bogus" -%}
         {{ null }}
         {%- else -%}
-        row['emailCheck']
+        row['badEmail']
         {%- endif -%}
+      ignoreNull: true
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
