@@ -29,7 +29,7 @@ config:
         {%- if emailCheck contains "Input" -%}
         {{ null }}
         {%- else -%}
-        row['badEmail']
+        row['emailCheck']
         {%- endif -%}
   tableName: Table 1
   configVersion: 0
