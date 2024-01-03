@@ -28,7 +28,7 @@ config:
         {%- if row['badEmail'] contains "bogus" -%}
         {{ null }}
         {%- else -%}
-        row['badEmail']
+        {{row['badEmail']}}
         {%- endif -%}
       ignoreNull: true
   tableName: Table 1
