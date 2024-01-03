@@ -25,7 +25,8 @@ config:
     - to: Email
       type: template
       template: |-
-        {%- if row['badEmail'] | validate_email contains "Input" -%}
+        {%- assign emailCheck = row['badEmail'] | validate_email -%}
+        {%- if emailCheck contains "Input" -%}
         {{ null }}
         {%- else -%}
         row['badEmail']
