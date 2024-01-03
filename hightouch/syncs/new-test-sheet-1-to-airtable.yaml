@@ -24,7 +24,12 @@ config:
         {{finalValues}}
     - to: Email
       type: template
-      template: '{{ row[''badEmail''] | validate_email }}'
+      template: |-
+        {%- if row['badEmail'] | validate_email contains "Input" -%}
+        {{ null }}
+        {%- else -%}
+        row['badEmail']
+        {%- endif -%}
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
