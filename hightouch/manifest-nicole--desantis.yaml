@@ -2,12 +2,12 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
-  tester-o718u:
-    name: New Test Sheet
-    type: googlesheets
   postgre-sql-elephant:
     name: PostgreSQL Elephant
     type: postgres
+  tester-o718u:
+    name: New Test Sheet
+    type: googlesheets
   google-big-query:
     name: Google BigQuery
     type: bigquery
