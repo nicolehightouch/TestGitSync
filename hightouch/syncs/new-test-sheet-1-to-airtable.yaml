@@ -22,11 +22,14 @@ config:
         {%- endif -%}
 
         {{finalValues}}
+    - to: Email
+      type: template
+      template: '{{ row[''badEmail''] | validate_email }}'
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
     to: Name
-    from: ArrayNestedObject
+    from: newCol2
 schedule:
   type: manual
 schedulePaused: false
