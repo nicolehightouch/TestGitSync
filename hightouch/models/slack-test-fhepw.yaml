@@ -4,4 +4,4 @@ type: custom
 customQuery:
   name: Raw Data
   type: sheet
-primaryKey: ArrayNestedObject
+primaryKey: badEmail
