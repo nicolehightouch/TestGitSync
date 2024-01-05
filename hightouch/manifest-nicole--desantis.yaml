@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  MySQL_Test2:
+    name: MySQL_Test
+    type: mysql
   postgre-sql-elephant:
     name: PostgreSQL Elephant
     type: postgres
