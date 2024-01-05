@@ -1,0 +1,8 @@
+name: Testing Excel
+source: microsoft-excel
+type: custom
+customQuery:
+  type: excel
+  sheetId: in
+  workbookId: 42FA974669C76D00!105
+primaryKey: Date
