@@ -31,6 +31,13 @@ config:
         {{row['badEmail']}}
         {%- endif -%}
       ignoreNull: true
+    - to: Multi_line
+      type: template
+      template: |-
+        {%- assign finalValues = '[]' | parse -%}
+        {%- assign stringValues = "label_vale"-%}
+        {%- assign finalValues = finalValues | concat: stringValues -%}
+        {{finalValues}}
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
