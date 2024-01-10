@@ -4,14 +4,14 @@ config:
   mode: upsert
   baseId: appUQqzYN5cqJp77T
   mappings:
-    - to: new field
-      from: Abort
-      type: standard
+    - to: birthday_column
+      type: template
+      template: '{{ row[''Date''] | date: ''%m/%d/%Y''}}'
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
-    to: birthday_column
-    from: Date
+    to: new field
+    from: Abort
 schedule:
   type: manual
 schedulePaused: false
