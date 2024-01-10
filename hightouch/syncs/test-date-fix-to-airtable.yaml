@@ -1,0 +1,17 @@
+model: test-date-fix
+destination: airtable
+config:
+  mode: upsert
+  baseId: appUQqzYN5cqJp77T
+  mappings:
+    - to: new field
+      from: Abort
+      type: standard
+  tableName: Table 1
+  configVersion: 0
+  externalIdMapping:
+    to: birthday_column
+    from: Date
+schedule:
+  type: manual
+schedulePaused: false
