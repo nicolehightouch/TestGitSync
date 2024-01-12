@@ -1,0 +1,12 @@
+model: hair-1wfol
+destination: nd-slack-destination-4y0gu
+config:
+  mode: message
+  channel: C0366K4EE9Y
+  username: Group Test
+  addedBody: "-----------------------------------------------------------------------------------------------------\nA {{ org_type }}\_org: *{{ org_slug }}*, in your account *{{ sfdc_account_name }}* is up to something!\_\n\n{% if row['sfdc_account_csm_name'] == 'Pooled CS - Growth' %}\ncc:\_<!subteam^S061H20HW8H>\n\n \n{%- else -%}\ncc:\_<@{{ row['sfdc_account_csm_email'] | slack_user_lookup }}>\n{% endif %}\n\n{% assign events = row['events_json'] | parse %}\n{%- for priority in (1..3) -%}\n{% for i in events['events'] %}\n{%- if i.priority == priority -%}\n*Trigger Category*:\_{{ i.event_category }}\n{% for e in i.event_metadata %}\n\_ \_ *\_{{ e.description }}\n{% endfor %}\n{%- endif -%}\n{% endfor %}\n{%- endfor -%}"
+  isBlockKit: false
+  configVersion: 1
+schedule:
+  type: manual
+schedulePaused: false
