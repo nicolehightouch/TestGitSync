@@ -1,0 +1,27 @@
+model: hubspot-association-test
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: contacts
+  mappings:
+    - to: country
+      from: country
+      type: standard
+  configVersion: 0
+  externalIdMapping:
+    to: email
+    from: NewField
+    type: standard
+  associationMappings:
+    - to: CONTACT_TO_TICKET
+      type: reference
+      lookup:
+        by: id
+        from: hubspot_array
+        byType: STRING
+        object: 0-5
+        objectLabel: ticket
+schedule:
+  type: manual
+schedulePaused: false
