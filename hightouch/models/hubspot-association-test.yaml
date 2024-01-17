@@ -1,0 +1,12 @@
+name: Hubspot Association test
+source: mongo-db-9ngvc
+type: custom
+customQuery:
+  type: mongodb
+  filter: |-
+    {
+      "TestString": "HBTEST"
+    }
+  database: Nicoles_sync
+  collection: Nicoles_sync_collection
+primaryKey: nd_id
