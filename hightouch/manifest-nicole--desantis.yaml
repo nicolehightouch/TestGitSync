@@ -60,6 +60,12 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  redis:
+    name: Redis
+    type: redis
+  nicole-mysql:
+    name: nicole MySQL Test
+    type: mysql-destination
   amazon-kinesis:
     name: Amazon Kinesis
     type: amazon-kinesis
