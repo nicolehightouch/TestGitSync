@@ -1,0 +1,19 @@
+model: is-activated-special-feature-update
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: contacts
+  mappings:
+    - to: test_multiple_checkbox
+      from: special_feature
+      type: standard
+  configVersion: 0
+  externalIdMapping:
+    to: email
+    from: NewField
+    type: standard
+  associationMappings: []
+schedule:
+  type: manual
+schedulePaused: false

@@ -1,0 +1,10 @@
+model: is-activated-special-feature-update
+destination: email
+config:
+  mode: message
+  addedBody: Some configuration here we want to keep
+  recipient: nicole@hightouch.io
+  configVersion: 0
+schedule:
+  type: manual
+schedulePaused: false
