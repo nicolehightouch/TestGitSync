@@ -1,0 +1,12 @@
+name: is_activated, special_feature update
+source: mongo-db-9ngvc
+type: custom
+customQuery:
+  type: mongodb
+  filter: |-
+    {
+      "is_activated": true
+    }
+  database: Nicoles_sync
+  collection: Nicoles_sync_collection
+primaryKey: NewField
