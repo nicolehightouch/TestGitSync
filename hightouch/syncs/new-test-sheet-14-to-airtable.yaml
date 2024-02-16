@@ -4,14 +4,18 @@ config:
   mode: upsert
   baseId: appUQqzYN5cqJp77T
   mappings:
-    - to: birthday_column
-      from: birthday
+    - to: Linked Record
+      from: number linked
       type: standard
+    - to: Multi_line
+      type: static
+      value: Updated by Nicole 2/16/2024
+      valueType: STRING
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
-    to: Linked Record
-    from: number linked
+    to: Email
+    from: email
 schedule:
   type: manual
 schedulePaused: false
