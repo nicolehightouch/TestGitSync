@@ -2,15 +2,15 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  postgre-sql-elephant:
+    name: PostgreSQL Elephant
+    type: postgres
   microsoft-excel:
     name: Microsoft Excel
     type: microsoftexcel
   MySQL_Test2:
     name: MySQL_Test
     type: mysql
-  postgre-sql-elephant:
-    name: PostgreSQL Elephant
-    type: postgres
   tester-o718u:
     name: New Test Sheet
     type: googlesheets
