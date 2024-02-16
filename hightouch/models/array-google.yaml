@@ -4,4 +4,4 @@ type: custom
 customQuery:
   name: Sheet14
   type: sheet
-primaryKey: linked
+primaryKey: email
