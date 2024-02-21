@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  b2-c-e-commerce-testing:
+    name: B2C eCommerce testing
+    type: sample-data
   amazon-athena:
     name: Amazon Athena
     type: athena
