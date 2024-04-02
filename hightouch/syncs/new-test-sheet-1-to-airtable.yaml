@@ -38,11 +38,22 @@ config:
         {%- assign stringValues = "label_vale"-%}
         {%- assign finalValues = finalValues | concat: stringValues -%}
         {{finalValues}}
+    - to: new field
+      type: template
+      template: |-
+        {%- if row['Test_column_with_nulls'] !=nil -%}
+        {{ row['Test_column_with_nulls'] }}
+        {%- else -%}
+        False
+        {%- endif -%}
+    - to: birthday_column
+      from: Trait Abandoned Count
+      type: standard
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
-    to: Name
-    from: newCol2
+    to: PK
+    from: Trait Abandoned Count
 schedule:
   type: manual
 schedulePaused: false

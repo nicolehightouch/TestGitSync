@@ -3,15 +3,25 @@ destination: done-test-j171s
 config:
   mode: mirror
   mappings:
-    - to: TestingColumn
+    - to: petsmart_test
       type: template
-      template: |
-        {%- if row['random'] != nil -%}
-        {{row['email_1']}}
-        {% else %}
-        {{null}}  
-        {% endif %}
-  sheetName: Sheet16
+      template: >-
+        {%- if row['ASSOCIATE_IND'] == 1 and row['ASSOCIATE_PREVIOUS_SYNC'] !=
+        'PREVIOUS_ADD' -%} 
+
+        1
+
+        {%- elsif row['ASSOCIATE_IND'] == 0 and row['ASSOCIATE_PREVIOUS_SYNC']
+        == 'PREVIOUS_ADD' -%}
+
+        0
+
+        {%- else -%}
+
+        null
+
+        {%- endif -%}
+  sheetName: athenasource
   configVersion: 1
   spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
   sheetSelection: select

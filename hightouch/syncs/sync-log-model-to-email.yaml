@@ -2,7 +2,7 @@ model: sync-log-model
 destination: email
 config:
   mode: message
-  subject: Hi!
+  subject: Hi! Test update
   addedBody: What up
   recipient: nicole@hightouch.io
   configVersion: 0

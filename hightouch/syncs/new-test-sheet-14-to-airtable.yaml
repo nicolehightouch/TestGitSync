@@ -11,6 +11,9 @@ config:
       type: static
       value: Updated by Nicole 2/16/2024
       valueType: STRING
+    - to: new field
+      type: template
+      template: '{{ row[''full_name''] | split: " " | last }}'
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
@@ -18,4 +21,4 @@ config:
     from: email
 schedule:
   type: manual
-schedulePaused: false
+schedulePaused: true
