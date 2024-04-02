@@ -126,8 +126,6 @@ destinations:
   done-test-j171s:
     name: Nicole Hightouch
     type: googlesheets
-  'null':
-    type: googlesheets
   mailchimp:
     name: Mailchimp
     type: mailchimp
