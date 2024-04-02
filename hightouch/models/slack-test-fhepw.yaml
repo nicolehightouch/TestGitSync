@@ -2,6 +2,6 @@ name: New test - Sheet 1
 source: tester-o718u
 type: custom
 customQuery:
-  name: Raw Data
+  name: Sheet1
   type: sheet
-primaryKey: badEmail
+primaryKey: Trait Abandoned Count
