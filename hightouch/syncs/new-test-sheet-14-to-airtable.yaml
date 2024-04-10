@@ -15,7 +15,7 @@ config:
       type: template
       template: |-
         {%- if row['parent_uuid'] !=nil -%}
-        {{row['parent_uuid'] | prepend: 'external_id:' }}
+        external_id:{{row['parent_uuid'] }}
         {%- else -%}
         {{ null }}
         {%- endif -%}
