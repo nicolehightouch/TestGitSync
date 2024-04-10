@@ -9,11 +9,16 @@ config:
       type: standard
     - to: Multi_line
       type: static
-      value: Updated by Nicole 2/16/2024
+      value: Updated by Nicole 4/10/2024
       valueType: STRING
     - to: new field
       type: template
-      template: '{{ row[''full_name''] | split: " " | last }}'
+      template: |-
+        {%- if row['parent_uuid'] !=nil -%}
+        {{external_id: row['column_name']}}
+        {%- else -%}
+        {{ null }}
+        {%- endif -%}
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
