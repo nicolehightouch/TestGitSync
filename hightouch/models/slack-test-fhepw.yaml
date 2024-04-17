@@ -4,4 +4,4 @@ type: custom
 customQuery:
   name: Sheet1
   type: sheet
-primaryKey: Trait Abandoned Count
+primaryKey: Linked Record
