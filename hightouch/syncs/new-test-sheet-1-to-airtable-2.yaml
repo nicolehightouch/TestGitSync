@@ -1,0 +1,17 @@
+model: slack-test-fhepw
+destination: airtable
+config:
+  mode: upsert
+  baseId: appUQqzYN5cqJp77T
+  mappings:
+    - to: Multi_line
+      from: Linked Record
+      type: standard
+  tableName: Table 1
+  configVersion: 0
+  externalIdMapping:
+    to: Name
+    from: Linked Record
+schedule:
+  type: manual
+schedulePaused: false
