@@ -69,6 +69,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  nd-salesforce-ghyno:
+    name: ND Salesforce
+    type: salesforce
   redis:
     name: Redis
     type: redis
@@ -192,9 +195,6 @@ destinations:
   notion-test-ej9v4:
     name: Notion test
     type: notion
-  nd-salesforce-ghyno:
-    name: ND Salesforce
-    type: salesforce
   click-up-testing-ijghz:
     name: ClickUp testing
     type: clickup
