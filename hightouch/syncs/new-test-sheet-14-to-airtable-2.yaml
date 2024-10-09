@@ -1,0 +1,35 @@
+model: array-google
+destination: airtable
+config:
+  mode: upsert
+  baseId: appUQqzYN5cqJp77T
+  mappings:
+    - to: Multi_line
+      type: template
+      template: >-
+        {%- assign itemsArray = '[]' | parse -%}
+
+        {%- assign castedPrice = row['Total_Product_Item_Fair_Market_Value_Amt']
+        | cast: 'number' -%}
+
+        {%- assign castedQuantity =
+        row['Invoice_Line_Product_Item_Quantity_Nbr'] | cast: 'number' -%}
+
+        {%- assign items = |json_construct:'id',
+        row['Receipt_Id'],'name',row['Revenue_Recognition_Nm'],
+        'price',castedPrice , 'quantity',castedQuantity -%}
+
+        {%- assign finalItems = itemsArray | concat: items -%}
+
+        {{finalItems}}
+    - to: Notes
+      type: template
+      template: '{{ row[''Revenue_Recognition_Nm''] | cast : ''string'' }}'
+  tableName: Table 1
+  configVersion: 0
+  externalIdMapping:
+    to: PK
+    from: context_library_version
+schedule:
+  type: manual
+schedulePaused: false
