@@ -1,0 +1,22 @@
+model: clusterAnalyses-api
+destination: airtable
+config:
+  mode: upsert
+  baseId: appUQqzYN5cqJp77T
+  mappings:
+    - to: Multi_line
+      type: template
+      template: |-
+        {%- if row['emptyArray'] == '[""]' -%}
+          yikes
+        {%- else -%}
+        {{ row['emptyArray'] | parse }}
+        {%- endif -%}
+  tableName: Table 1
+  configVersion: 0
+  externalIdMapping:
+    to: PK
+    from: _id
+schedule:
+  type: manual
+schedulePaused: false
