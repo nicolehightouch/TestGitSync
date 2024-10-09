@@ -1,0 +1,7 @@
+name: SFTP Model flow
+source: sftp
+type: custom
+customQuery:
+  path: /new test - SFDCContactOpp.csv
+  type: string
+primaryKey: ContactID
