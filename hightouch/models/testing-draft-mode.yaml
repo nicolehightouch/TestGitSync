@@ -1,0 +1,6 @@
+name: Testing Draft Mode
+source: success-eng---postgres
+type: raw_sql
+rawSql: SELECT * FROM zendesk.users
+tableName: zendesk.tickets
+primaryKey: brand_id
