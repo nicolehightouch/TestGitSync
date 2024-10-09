@@ -1,0 +1,19 @@
+model: hubspot-association-test
+destination: ht-array-test
+config:
+  add:
+    body: '{{ row.nd_id}}'
+    method: POST
+    enabled: true
+    onError: retryNextSync
+    timeout: 30
+    bodyType: template
+    contentType: application/json
+    hasRateLimit: false
+  change: {}
+  remove: {}
+  skipFirstRun: false
+  configVersion: 1
+schedule:
+  type: manual
+schedulePaused: false

@@ -1,16 +1,19 @@
 model: array-google
 destination: s3-test-bucket
 config:
-  mode: all
+  mode: diff
   fileType: csv
   mappings: []
   delimiter: ','
-  objectKey: results.csv
-  configVersion: 0
+  skipEmpty: true
+  configVersion: 1
+  diffAddedPath: results-added.csv
   includeHeader: true
   autoSyncColumns: true
   csvRowDelimeter: auto
+  diffChangedPath: results-changed.csv
+  diffRemovedPath: results-removed.csv
   timestampOffsetSeconds: 0
 schedule:
   type: manual
-schedulePaused: false
+schedulePaused: true

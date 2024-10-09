@@ -12,4 +12,4 @@ config:
   sheetSelection: select
 schedule:
   type: manual
-schedulePaused: false
+schedulePaused: true

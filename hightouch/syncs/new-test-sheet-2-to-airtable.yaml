@@ -7,20 +7,65 @@ config:
     - to: Notes
       type: template
       template: |-
-        {%- assign genders = '[]' | parse -%}
-        {%- if row['gender'] != "" and row['gender'] != null -%}
-        {%- assign curGender = row['gender'] | split: ", " -%}
-        {%- assign genders = genders | concat: curGender -%}
+        {%- assign numArray = '[]' | parse -%}
+        {%- if row['Users'] != "" and row['Users'] != null -%}
+        {%- assign splitArr = row['Users'] | split: "|" -%}
+        {%- for stringNum in splitArr -%}
+          {%- assign casted = stringNum | cast: "number" -%}
+          {%- assign numArray = numArray | concat: casted -%}
+          {%- endfor -%}
+        {%- endif -%} 
+        {{numArray}}
+    - to: new field
+      type: template
+      template: >-
+        {%- assign modelDate = row['received_at'] | date: '%Y-%m-%d' --%}
+
+        {%- assign currDate = context['timestamp'] | date: '%Y-%m-%d' -%}
+
+        {%- if row['context_library_version'] == 'Active' and row['received_at']
+        != null  and modelDate > currDate -%}
+
+        true
+
+        {%- else -%}
+
+        false
+
         {%- endif -%}
-        {{genders}}
-    - to: Linked Record
-      from: casted_ltv
-      type: standard
+    - to: Done
+      type: template
+      template: |-
+        {%- assign modelDate = row['received_at'] | date: '%Y-%m-%d' --%}
+        {%- assign currDate = context['timestamp'] | date: '%Y-%m-%d' -%}
+        {{modelDate > currDate }}
+    - to: Multi_line
+      type: template
+      template: |-
+        {%- assign portalsArray = '[]' | parse -%}
+        {%- if row['Users'] != '[]' -%}
+        {%- assign portalsString = row['Users'] |remove: '[' |remove: ']'  -%}
+        {%- assign splitPortals = portalsString | split: "," -%}
+        {%- for stringVal in splitPortals -%}
+          {%- assign casted = stringVal | cast: "string" -%}
+          {%- assign portalsArray = portalsArray | concat: casted -%}
+          {%- endfor -%}
+        {%- endif -%} 
+        {{portalsArray}}
+    - to: birthday_column
+      type: template
+      template: |-
+        {%- if row['Unique']!= null -%}
+        {{'' | null_if_empty}}
+        {%- else -%}
+        This is the PK
+        {%- endif -%} 
+      ignoreNull: true
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
-    to: Name
-    from: first_name
+    to: PK
+    from: Unique
 schedule:
   type: manual
 schedulePaused: false

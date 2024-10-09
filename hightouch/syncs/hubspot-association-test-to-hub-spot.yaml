@@ -22,6 +22,7 @@ config:
         byType: STRING
         object: 0-5
         objectLabel: ticket
+  overwriteExistingAssociations: true
 schedule:
   type: manual
 schedulePaused: false
