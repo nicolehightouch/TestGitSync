@@ -1,7 +1,7 @@
 model: is-activated-special-feature-update
 destination: hub-spot
 config:
-  mode: upsert
+  mode: update
   type: object
   object: contacts
   mappings:
