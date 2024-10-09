@@ -1,7 +1,7 @@
-name: New test - Sheet 2
+name: New test - RowBuildUpSource
 source: tester-o718u
 type: custom
 customQuery:
-  name: Sheet2
+  name: RowBuildUpSource
   type: sheet
-primaryKey: first_name
+primaryKey: Unique
