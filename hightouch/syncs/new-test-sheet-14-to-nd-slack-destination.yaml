@@ -1,0 +1,13 @@
+model: array-google
+destination: nd-slack-destination-4y0gu
+config:
+  mode: message
+  channel: C0366K4EE9Y
+  addedBody: '{{ context - library_name }}'
+  isBlockKit: false
+  changedBody: '*{{ row[''context - library_name''] }}*'
+  skipFirstRun: false
+  configVersion: 1
+schedule:
+  type: manual
+schedulePaused: false

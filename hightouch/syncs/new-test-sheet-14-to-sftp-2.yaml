@@ -1,0 +1,15 @@
+model: array-google
+destination: sftp-2
+config:
+  mode: all
+  path: results.csv
+  fileType: json
+  mappings: []
+  skipEmpty: true
+  configVersion: 0
+  autoSyncColumns: true
+  skipWriteTempFile: 'true'
+  timestampOffsetSeconds: 0
+schedule:
+  type: manual
+schedulePaused: false

@@ -1,0 +1,24 @@
+model: array-google
+destination: http-request-ht-api-maz6c
+config:
+  add:
+    body: |-
+      {
+      "data" : {
+      "name": "{{row.notes}}"
+      }
+      }
+    method: POST
+    enabled: true
+    onError: retryNextSync
+    timeout: 30
+    bodyType: template
+    contentType: application/json
+    hasRateLimit: false
+  change: {}
+  remove: {}
+  skipFirstRun: false
+  configVersion: 1
+schedule:
+  type: manual
+schedulePaused: false
