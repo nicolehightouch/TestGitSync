@@ -19,6 +19,9 @@ config:
         {%- else -%}
         {{ null }}
         {%- endif -%}
+    - to: Notes
+      type: template
+      template: 'Entry ID: {{ row[''country''] }}'
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
