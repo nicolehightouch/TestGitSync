@@ -1,0 +1,70 @@
+model: http-request-repro
+destination: http-request-ht-api-maz6c
+config:
+  add:
+    body: |
+
+      {%- assign cclist = row.recipient.sub | split: "," -%}
+      {
+        "message": {
+          "to": [
+            {
+              "email": "{{row.recipient.main}}"
+            }
+          ],
+          "template": "Z6657BT1V7MWGMGAA1RW10V144SV",
+          "data": {
+            "detection" : {
+              "severity" : "{{row.posture.context.severity | capitalize}}"
+            }, 
+            "notification_title": "New Cloud Security Posture Detected",
+            "notification_type": "{{row.type}}",
+            "notification_kind": "{{row.kind}}",
+            "notification_timestamp": "{{row.created}}",
+            "check_name": "{{row.posture.source.name}}",
+            "check_description": "{{ row.posture.source.notes }}",
+            "posture_detected": {
+              "ID": "Posture-{{row.id  | slice: 1,10 }}",
+              "detection time": "{{row.posture.start}}",
+              "severity": "{{row.posture.context.severity}}",
+              "use case": "CSPM"
+            },
+            "asset_affected": {
+              "cloud resource ID": "{{row.target.instance.id}}",
+              "cloud region": "{{row.target.cloud.region}}",
+              "cloud resource name": "{{row.target.instance.name}}",
+              "cloud account ID": "{{row.target.account.id}}",
+              "cloud service": "{{row.target.instance.type}}"
+            },
+            "meta": {
+              "user_cc": [
+      {%- for email in cclist -%}
+        {%- if forloop.Last == true -%}
+          "{{email | strip }}"
+        {%- else -%}
+          "{{email | strip }}",
+        {%- endif -%}
+      {%- endfor -%}
+        ]
+            }
+          },
+          "routing": {
+            "method": "all",
+            "channels": ["email"]
+          }
+        }
+      }
+    method: POST
+    enabled: true
+    onError: retryNextSync
+    timeout: 30
+    bodyType: template
+    contentType: application/json
+    hasRateLimit: false
+  change: {}
+  remove: {}
+  skipFirstRun: false
+  configVersion: 1
+schedule:
+  type: manual
+schedulePaused: false
