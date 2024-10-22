@@ -78,6 +78,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  microsoft-one-drive:
+    name: Microsoft OneDrive
+    type: onedrive
   http-request-ht-api-maz6c:
     name: HTTP Request - HT API
     type: webhookV2
