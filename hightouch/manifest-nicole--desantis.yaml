@@ -78,6 +78,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  amazon-sqs:
+    name: Amazon SQS
+    type: amazon-sqs
   microsoft-one-drive:
     name: Microsoft OneDrive
     type: onedrive
