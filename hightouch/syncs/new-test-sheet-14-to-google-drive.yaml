@@ -12,7 +12,8 @@ config:
       from: email
       type: standard
   delimiter: ','
-  folderUrl: https://drive.google.com/drive/u/0/folders/10RrtqbPzpVkbKfCYm6MqL65d8iOTFvQ9
+  folderUrl: >-
+    https://drive.google.com/drive/folders/10RrtqbPzpVkbKfCYm6MqL65d8iOTFvQ9?usp=share_link
   skipEmpty: true
   existingDoc: false
   configVersion: 0
