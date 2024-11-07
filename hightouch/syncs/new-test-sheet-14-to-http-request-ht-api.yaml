@@ -21,4 +21,4 @@ config:
   configVersion: 1
 schedule:
   type: manual
-schedulePaused: false
+schedulePaused: true
