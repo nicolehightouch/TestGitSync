@@ -1,4 +1,4 @@
-name: Testing large SQL v2
+name: Another SQL test
 source: success-eng---postgres
 type: raw_sql
 rawSql: |-
