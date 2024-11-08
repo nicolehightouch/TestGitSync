@@ -1,0 +1,6 @@
+name: Testing large SQL v2
+source: success-eng---postgres
+type: raw_sql
+rawSql: |-
+SELECT id FROM warby_parker_demo.users
+primaryKey: id
