@@ -4,6 +4,6 @@ type: raw_sql
 rawSql: |-    
 SELECT
   id,
-  birthday
+  casted_ltv
 FROM warby_parker_demo.users
 primaryKey: id
