@@ -4,6 +4,6 @@ type: raw_sql
 rawSql: |-    
 SELECT
   id,
-  casted_ltv
+  country
 FROM warby_parker_demo.users
 primaryKey: id
