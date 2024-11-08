@@ -2,24 +2,8 @@ name: Testing large SQL
 source: success-eng---postgres
 type: raw_sql
 rawSql: |-    
-  SELECT
-  "birthday" AS "birthday"
-,  "gender" AS "gender"
-,  "country" AS "country"
-,  "context_library_name" AS "context_library_name"
-,  "last_name" AS "last_name"
-,  "email" AS "email"
-,  "dob" AS "dob"
-,  "first_name" AS "first_name"
-,  "id" AS "id"
-,  "context_integrations_lifetime_value" AS "context_integrations_lifetime_value"
-,  "uuid_ts" AS "uuid_ts"
-,  "lifetime_value"::FLOAT AS "lifetime_value"
-,  "full_name" AS "full_name"
-,  "context_library_version" AS "context_library_version"
-,  "ip_address" AS "ip_address"
-,  "last_purchase_date" AS "last_purchase_date"
-,  "ltv_parent" AS "ltv_parent"
-,  "received_at" AS "received_at"
+SELECT
+  id,
+  birthday
 FROM warby_parker_demo.users
 primaryKey: id
