@@ -1,0 +1,9 @@
+name: Testing SQL YAML
+source: success-eng---postgres
+type: raw_sql
+rawSql: |-
+  SELECT
+    id,
+    country
+  FROM warby_parker_demo.users
+primaryKey: id
