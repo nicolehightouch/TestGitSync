@@ -1,0 +1,5 @@
+name: WarbyUsers
+source: success-eng---postgres
+type: table
+tableName: warby_parker_demo.users
+primaryKey: id
