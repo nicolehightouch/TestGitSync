@@ -78,6 +78,12 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  customer-io:
+    name: Customer.io
+    type: customerio
+  iterable:
+    name: Iterable
+    type: iterable
   amazon-sqs:
     name: Amazon SQS
     type: amazon-sqs
