@@ -1,0 +1,19 @@
+model: warby-users
+destination: google-drive
+config:
+  mode: all
+  path: users.csv
+  fileType: csv
+  mappings: []
+  delimiter: ','
+  folderUrl: https://drive.google.com/drive/folders/10RrtqbPzpVkbKfCYm6MqL65d8iOTFvQ9
+  skipEmpty: true
+  existingDoc: false
+  configVersion: 0
+  overrideConfig: {}
+  autoSyncColumns: true
+  csvRowDelimeter: auto
+  timestampOffsetSeconds: 0
+schedule:
+  type: manual
+schedulePaused: false
