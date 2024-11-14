@@ -10,6 +10,7 @@ config:
   skipEmpty: true
   existingDoc: false
   configVersion: 0
+  includeHeader: true
   overrideConfig: {}
   autoSyncColumns: true
   csvRowDelimeter: auto
