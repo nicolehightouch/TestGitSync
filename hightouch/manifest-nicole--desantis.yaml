@@ -78,6 +78,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  google-drive:
+    name: Google Drive
+    type: googleDrive
   customer-io:
     name: Customer.io
     type: customerio
@@ -141,9 +144,6 @@ destinations:
   airtable:
     name: Airtable
     type: airtable
-  google-drive:
-    name: Google Drive
-    type: googleDrive
   http-request:
     name: HTTP Request
     type: webhookV2
