@@ -1,9 +1,22 @@
 model: hair-1wfol
 destination: nd-slack-destination-4y0gu
 config:
-  format: csv
+  body: |-
+    [{
+                "type": "section",
+                "fields": [
+                    {
+                        "type": "mrkdwn",
+                        "text": "­*New Orders:­* {{ Email }}"
+                    }
+                ]
+            }]
+  mode: batchMessage
   channel: C0366K4EE9Y
-  configVersion: 0
+  isBlockKit: true
+  rowsPerBatch: 10
+  configVersion: 1
+  overrideConfig: {}
 schedule:
   type: manual
 schedulePaused: false
