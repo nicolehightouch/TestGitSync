@@ -1,0 +1,7 @@
+name: Append Model
+source: tester-o718u
+type: custom
+customQuery:
+  name: GoogleAppendModel
+  type: sheet
+primaryKey: email
