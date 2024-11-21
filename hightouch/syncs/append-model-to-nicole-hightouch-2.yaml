@@ -1,0 +1,40 @@
+model: append-model
+destination: done-test-j171s
+config:
+  mode: insert
+  mappings:
+    - to: FirstName
+      from: FirstName
+      type: standard
+    - to: LastName
+      from: LastName
+      type: standard
+    - to: email
+      from: email
+      type: standard
+    - to: fullName
+      from: fullName
+      type: standard
+    - to: Account
+      from: Account
+      type: standard
+    - to: Phone
+      from: Phone
+      type: standard
+    - to: Owner
+      from: Owner
+      type: standard
+    - to: Website
+      from: Website
+      type: standard
+  sheetName: Empty Google Append
+  configVersion: 2
+  overrideConfig: {}
+  sheetSelection: select
+  spreadsheetInfo:
+    id: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+    name: new test
+    parent: 0AARy0_34IvoqUk9PVA
+schedule:
+  type: manual
+schedulePaused: false
