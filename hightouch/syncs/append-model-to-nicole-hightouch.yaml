@@ -1,0 +1,17 @@
+model: append-model
+destination: done-test-j171s
+config:
+  mode: insert
+  mappings: []
+  sheetName: Empty Google Append
+  configVersion: 2
+  overrideConfig: {}
+  sheetSelection: select
+  autoSyncColumns: true
+  spreadsheetInfo:
+    id: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+    name: new test
+    parent: 0AARy0_34IvoqUk9PVA
+schedule:
+  type: manual
+schedulePaused: false
