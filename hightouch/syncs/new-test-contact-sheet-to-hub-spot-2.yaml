@@ -24,6 +24,10 @@ config:
         objectLabel: company
   enableSplitBatchRetry: true
 schedule:
-  type: manual
+  type: interval
+  schedule:
+    interval:
+      unit: week
+      quantity: 3
+  startDate: '2024-12-12T05:00:00.000Z'
 schedulePaused: false
-slug: new-test-contact-sheet-to-hub-spot-2
