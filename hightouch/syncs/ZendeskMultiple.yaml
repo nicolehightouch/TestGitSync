@@ -1,0 +1,14 @@
+model: NewModelZendesk
+destination: google-sheet
+config:
+  mode: mirror
+  mappings: []
+  sheetName: Sheet1
+  configVersion: 1
+  spreadsheetId: 15src3s6bWEOw-vRp0PKhGyVWVT_y_G7-SbsyhHWZjMM
+  createNewSheet: true
+  sheetSelection: select
+  autoSyncColumns: true
+schedule:
+  type: manual
+schedulePaused: false
