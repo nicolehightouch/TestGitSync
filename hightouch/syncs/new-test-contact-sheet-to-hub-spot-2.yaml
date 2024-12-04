@@ -13,7 +13,15 @@ config:
   externalIdMapping:
     to: email
     from: email
-  associationMappings: []
+  associationMappings:
+    - to: CONTACT_TO_COMPANY
+      type: reference
+      lookup:
+        by: id
+        from: CompanyID
+        byType: STRING
+        object: 0-2
+        objectLabel: company
   enableSplitBatchRetry: true
 schedule:
   type: manual
