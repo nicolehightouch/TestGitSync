@@ -5,7 +5,8 @@ config:
   type: object
   object: contacts
   mappings: []
-  configVersion: 0
+  configVersion: 1
+  associationMode: append
   externalIdMapping:
     to: email
     from: email
