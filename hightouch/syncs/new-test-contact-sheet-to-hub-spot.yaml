@@ -14,8 +14,8 @@ config:
     - to: CONTACT_TO_COMPANY
       type: 'reference '
       lookup:
-        by: website
-        from: Website
+        by: id
+        from: CompanyID
         byType: STRING
         object: 0-2
         objectLabel: company
