@@ -1,0 +1,6 @@
+name: NewModelZendesk
+source: success-eng---postgres
+type: raw_sql
+rawSql: |-
+SELECT id FROM warby_parker_demo.users
+primaryKey: id
