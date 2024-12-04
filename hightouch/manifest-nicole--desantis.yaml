@@ -2,6 +2,9 @@
 # Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
 
 sources:
+  sample-source-ftwl8:
+    name: Sample Source
+    type: sample-data
   google-sheets-api-v2:
     name: Google Sheets API v2
     type: googlesheets
@@ -71,9 +74,6 @@ sources:
   my-test-bok6j:
     name: my test
     type: googlesheets
-  sample-source-ftwl8:
-    name: Sample Source
-    type: sample-data
   fake-grzxr:
     name: fake
     type: sample-data
