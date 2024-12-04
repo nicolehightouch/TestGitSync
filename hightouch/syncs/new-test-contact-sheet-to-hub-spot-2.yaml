@@ -1,0 +1,20 @@
+model: contact-sfdc-model-of0p0
+destination: hub-spot
+config:
+  mode: upsert
+  type: object
+  object: contacts
+  mappings:
+    - to: firstname
+      from: FirstName
+      type: standard
+  configVersion: 1
+  associationMode: append
+  externalIdMapping:
+    to: email
+    from: email
+  associationMappings: []
+  enableSplitBatchRetry: true
+schedule:
+  type: manual
+schedulePaused: false
