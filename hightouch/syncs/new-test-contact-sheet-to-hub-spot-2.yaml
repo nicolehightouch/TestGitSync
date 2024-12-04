@@ -26,3 +26,4 @@ config:
 schedule:
   type: manual
 schedulePaused: false
+slug: new-test-contact-sheet-to-hub-spot-2
