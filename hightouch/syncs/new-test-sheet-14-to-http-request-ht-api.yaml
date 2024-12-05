@@ -2,11 +2,40 @@ model: array-google
 destination: http-request-ht-api-maz6c
 config:
   add:
-    body: |-
+    body: >
+      {%- assign homeNumber = row['HOME_ADDRESS1'] | split: " " | first -%}
+
+      {%- assign stressAddress = row['HOME_ADDRESS1'] | remove: homeNumber -%}
+
+
       {
-      "data" : {
-      "name": "{{row.notes}}"
-      }
+
+      "address":
+
+      {"title": {%- if row['GENDER'] == 'M' -%}"Mr"{%- elsif  row['GENDER'] ==
+      'F' -%}"Ms"{%- else -%}"Mx"{%- endif -%},
+
+      "firstName": "{{ row['FIRST_NAME'] }}", 
+
+      "lastName": "{{ row['LAST_NAME'] }}",
+
+      "street": "{{stressAddress}}",
+
+      "houseNumber": {{homeNumber}},
+
+      {%- if row['HOME_ADDRESS2'] != nil -%}"address2":
+      "{{row['HOME_ADDRESS2']}}",{%- endif -%}
+             "zipCode": "{{ row['ZIP'] }}",
+             "city": "{{ row['CITY'] }}",
+             "country": {%- case row['COUNTRY'] -%}
+
+      {%- when "US" -%}"United States"{%- when "FR" -%}"France"{%- when "DE"
+      -%}"Germany"{%- when "UK" -%}"United Kingdom"{%- when "SE" -%}"Sweden"{%-
+      when "CH" -%}"Switzerland"{%- when "IR" -%}"Ireland"{%- when "AU"
+      -%}"Australia"{%- when "NZ" -%}"New Zealand"{%- when "CA" -%}"Canada"{%-
+      when "BE" -%}"Belgium"{%- when "NL" -%}"Netherlands"{%- endcase -%}
+         },
+         "variation": 1
       }
     method: POST
     enabled: true
