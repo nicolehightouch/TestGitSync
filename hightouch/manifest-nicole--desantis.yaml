@@ -78,6 +78,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  sync-logs-only-30109:
+    name: Sync Logs Only
+    type: sync-logs
   google-drive:
     name: Google Drive
     type: googleDrive
