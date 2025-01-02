@@ -6,12 +6,10 @@ config:
   mappings:
     - to: Notes
       type: template
-      template: |-
-        {%- assign items = row['ArrayNestedObject'] | parse -%}
-        {%- for item in items -%} 
-        {{item.obj_id}}:{{item.obj_value}}{% unless forloop.last %},
-        {% endunless -%}
-        {%- endfor -%}
+      template: >-
+        {%- if row['ArrayNestedObject'] == null -%}{{null}}{%- else -%}{%-
+        assign geo_object = |json_construct:'lat',
+        row['NewField'],'lon',row['TestString'] -%}{{geo_object}}{%- endif -%}
   tableName: Table 1
   configVersion: 0
   externalIdMapping:
