@@ -78,6 +78,9 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  testing-auth-delete:
+    name: Testing auth delete
+    type: googlesheets
   sync-logs-only-30109:
     name: Sync Logs Only
     type: sync-logs
