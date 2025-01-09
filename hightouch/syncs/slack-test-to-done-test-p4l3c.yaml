@@ -3,12 +3,14 @@ destination: done-test-j171s
 config:
   mode: mirror
   mappings: []
-  cellRange: A1:G50
-  sheetName: Sheet4
-  configVersion: 1
-  spreadsheetId: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+  sheetName: Import Source Example
+  configVersion: 2
   sheetSelection: select
   autoSyncColumns: true
+  spreadsheetInfo:
+    id: 1X3UwDCyypIJRIXDIk3sm9Ygn4ygsxIUAD4e7dw7ea9E
+    name: new test
+    parent: 0AARy0_34IvoqUk9PVA
 schedule:
   type: manual
 schedulePaused: false
