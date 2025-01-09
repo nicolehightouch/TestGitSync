@@ -12,5 +12,9 @@ config:
     name: new test
     parent: 0AARy0_34IvoqUk9PVA
 schedule:
-  type: manual
+  type: interval
+  schedule:
+    interval:
+      unit: hour
+      quantity: 4
 schedulePaused: false
