@@ -78,6 +78,12 @@ sources:
     name: fake
     type: sample-data
 destinations:
+  hightouch-g-sheet-adglw:
+    name: Hightouch GSheet
+    type: googlesheets
+  nd-slack-destination-4y0gu:
+    name: ND slack destination
+    type: slack
   testing-auth-delete:
     name: Testing auth delete
     type: googlesheets
@@ -231,15 +237,9 @@ destinations:
   fake-fb-sjf5x:
     name: fake fb
     type: facebookConversions
-  nd-slack-destination-4y0gu:
-    name: ND slack destination
-    type: slack
   notion-test-ej9v4:
     name: Notion test
     type: notion
   click-up-testing-ijghz:
     name: ClickUp testing
     type: clickup
-  hightouch-g-sheet-adglw:
-    name: Hightouch GSheet
-    type: googlesheets
